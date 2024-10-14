@@ -21,6 +21,127 @@
 		D3386F952CBC3F8800027178 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = D3386F942CBC3F8800027178 /* FirebaseFunctions */; };
 		D3386F972CBC3F8800027178 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = D3386F962CBC3F8800027178 /* FirebaseMessaging */; };
 		D3386F992CBC3F8800027178 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D3386F982CBC3F8800027178 /* FirebaseStorage */; };
+		D3386F9F2CBD165C00027178 /* BaseMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386F9E2CBD165C00027178 /* BaseMapViewModel.swift */; };
+		D3386FA12CBD167800027178 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FA02CBD167800027178 /* BaseViewModel.swift */; };
+		D3386FA42CBD169800027178 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FA32CBD169800027178 /* Background.swift */; };
+		D3386FA62CBD16A800027178 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FA52CBD16A800027178 /* Color.swift */; };
+		D3386FA92CBD16CF00027178 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FA82CBD16CF00027178 /* ARViewContainer.swift */; };
+		D3386FAC2CBD16E800027178 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = D3386FAB2CBD16E800027178 /* ZIPFoundation */; };
+		D3386FAF2CBD16F000027178 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D3386FAE2CBD16F000027178 /* KeychainSwift */; };
+		D3386FB52CBD172700027178 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FB42CBD172700027178 /* KeyboardObserver.swift */; };
+		D3386FB72CBD173E00027178 /* EventWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FB62CBD173E00027178 /* EventWebView.swift */; };
+		D3386FB92CBD175600027178 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FB82CBD175600027178 /* WebView.swift */; };
+		D3386FBB2CBD177A00027178 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FBA2CBD177A00027178 /* SoundManager.swift */; };
+		D3386FC02CBD17E500027178 /* UserDefaultmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FBF2CBD17E500027178 /* UserDefaultmanager.swift */; };
+		D3386FC22CBD17F900027178 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FC12CBD17F900027178 /* KeyChainManager.swift */; };
+		D3386FC52CBD184200027178 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FC42CBD184200027178 /* LocationManager.swift */; };
+		D3386FC82CBD186600027178 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FC72CBD186600027178 /* FirestoreManager.swift */; };
+		D3386FCC2CBD18A200027178 /* TranslationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FCB2CBD18A200027178 /* TranslationManager.swift */; };
+		D3386FD22CBD18E400027178 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FD12CBD18E400027178 /* CustomTabBar.swift */; };
+		D3386FD42CBD18FA00027178 /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FD32CBD18FA00027178 /* NavigationState.swift */; };
+		D3386FD62CBD191800027178 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FD52CBD191800027178 /* AppState.swift */; };
+		D3386FDA2CBD19C700027178 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FD92CBD19C700027178 /* IconView.swift */; };
+		D3386FE02CBD1A0B00027178 /* ChallengeListFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FDF2CBD1A0B00027178 /* ChallengeListFirestoreManager.swift */; };
+		D3386FE22CBD1A3000027178 /* ChallengeListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FE12CBD1A3000027178 /* ChallengeListDataManager.swift */; };
+		D3386FE42CBD1A4900027178 /* ChallengeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FE32CBD1A4900027178 /* ChallengeListViewModel.swift */; };
+		D3386FE62CBD1A6200027178 /* ChallengeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FE52CBD1A6200027178 /* ChallengeListView.swift */; };
+		D3386FE82CBD1A9300027178 /* ChallengePresentationFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FE72CBD1A9300027178 /* ChallengePresentationFirestoreManager.swift */; };
+		D3386FEA2CBD1AAA00027178 /* ChallengePresentationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FE92CBD1AAA00027178 /* ChallengePresentationDataManager.swift */; };
+		D3386FEC2CBD1AC200027178 /* ChallengePresentationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FEB2CBD1AC200027178 /* ChallengePresentationViewModel.swift */; };
+		D3386FEE2CBD1ADC00027178 /* ChallengePresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FED2CBD1ADC00027178 /* ChallengePresentationView.swift */; };
+		D3386FF02CBD1B0F00027178 /* ChallengeRewardFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FEF2CBD1B0F00027178 /* ChallengeRewardFirestoreManager.swift */; };
+		D3386FF22CBD1C3C00027178 /* ChallengeRewardDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FF12CBD1C3C00027178 /* ChallengeRewardDataManager.swift */; };
+		D3386FF42CBD1C6E00027178 /* ChallengeRewardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FF32CBD1C6E00027178 /* ChallengeRewardViewModel.swift */; };
+		D3386FF62CBD1C8B00027178 /* ChallengeRewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FF52CBD1C8B00027178 /* ChallengeRewardView.swift */; };
+		D3386FFE2CBD20F800027178 /* PuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FFD2CBD20F800027178 /* PuzzleView.swift */; };
+		D33870002CBD210F00027178 /* PuzzleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FFF2CBD210F00027178 /* PuzzleViewModel.swift */; };
+		D33870022CBD212200027178 /* PuzzledataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870012CBD212200027178 /* PuzzledataManager.swift */; };
+		D33870042CBD213800027178 /* PuzzleFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870032CBD213800027178 /* PuzzleFirestoreManager.swift */; };
+		D33870062CBD215400027178 /* CoinFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870052CBD215400027178 /* CoinFirestoreManager.swift */; };
+		D33870082CBD216700027178 /* CoinDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870072CBD216700027178 /* CoinDataManager.swift */; };
+		D338700A2CBD218200027178 /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870092CBD218200027178 /* CoinViewModel.swift */; };
+		D338700C2CBD21AF00027178 /* CoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338700B2CBD21AF00027178 /* CoinView.swift */; };
+		D338700E2CBD21C900027178 /* QuestionAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338700D2CBD21C900027178 /* QuestionAnswerView.swift */; };
+		D33870102CBD21E400027178 /* QuestionAnswerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338700F2CBD21E400027178 /* QuestionAnswerViewModel.swift */; };
+		D33870122CBD21FF00027178 /* QuestionAnswerDatamanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870112CBD21FF00027178 /* QuestionAnswerDatamanager.swift */; };
+		D33870142CBD221400027178 /* QuestionAnswerFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870132CBD221400027178 /* QuestionAnswerFirestoreManager.swift */; };
+		D33870162CBD222E00027178 /* DatesorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870152CBD222E00027178 /* DatesorderView.swift */; };
+		D33870182CBD224700027178 /* DatesOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870172CBD224700027178 /* DatesOrderViewModel.swift */; };
+		D338701A2CBD225900027178 /* DatesOrderDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870192CBD225900027178 /* DatesOrderDataManager.swift */; };
+		D338701C2CBD227300027178 /* DatesorderFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338701B2CBD227300027178 /* DatesorderFirestoreManager.swift */; };
+		D338701F2CBD229100027178 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338701E2CBD229100027178 /* CameraView.swift */; };
+		D33870212CBD22A700027178 /* TakePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870202CBD22A700027178 /* TakePhotoView.swift */; };
+		D33870232CBD22CD00027178 /* TakePhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870222CBD22CD00027178 /* TakePhotoViewModel.swift */; };
+		D33870252CBD22E000027178 /* TakephotoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870242CBD22E000027178 /* TakephotoDataManager.swift */; };
+		D33870272CBD231300027178 /* TakePhotoFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870262CBD231300027178 /* TakePhotoFirestoreManager.swift */; };
+		D338702D2CBD235F00027178 /* SettingProfileFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338702C2CBD235F00027178 /* SettingProfileFirestoreManager.swift */; };
+		D338702F2CBD237700027178 /* SettingProfiledataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338702E2CBD237700027178 /* SettingProfiledataManager.swift */; };
+		D33870312CBD239000027178 /* SettingProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870302CBD239000027178 /* SettingProfileViewModel.swift */; };
+		D33870332CBD23AF00027178 /* SettingProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870322CBD23AF00027178 /* SettingProfileView.swift */; };
+		D33870352CBD23C800027178 /* ContactSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870342CBD23C800027178 /* ContactSheetView.swift */; };
+		D33870372CBD23DD00027178 /* PolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870362CBD23DD00027178 /* PolicyView.swift */; };
+		D33870392CBD23F800027178 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870382CBD23F800027178 /* EditProfileView.swift */; };
+		D338703C2CBD251900027178 /* UserAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338703B2CBD251900027178 /* UserAnnotation.swift */; };
+		D338703F2CBD253600027178 /* MapContainerview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338703E2CBD253600027178 /* MapContainerview.swift */; };
+		D33870422CBD255600027178 /* Map3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870412CBD255600027178 /* Map3DView.swift */; };
+		D33870442CBD256D00027178 /* Map3DViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870432CBD256D00027178 /* Map3DViewModel.swift */; };
+		D33870462CBD258100027178 /* Map3DDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870452CBD258100027178 /* Map3DDataManager.swift */; };
+		D33870482CBD25B100027178 /* Map3DFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870472CBD25B100027178 /* Map3DFirestoreManager.swift */; };
+		D338704B2CBD25D100027178 /* MapCallOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338704A2CBD25D100027178 /* MapCallOutView.swift */; };
+		D338704D2CBD25EA00027178 /* CalloutRewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338704C2CBD25EA00027178 /* CalloutRewardView.swift */; };
+		D33870502CBD260C00027178 /* ChallengeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338704F2CBD260C00027178 /* ChallengeSelectionView.swift */; };
+		D33870532CBD262900027178 /* Map2DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870522CBD262900027178 /* Map2DView.swift */; };
+		D33870552CBD266C00027178 /* Map2DViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870542CBD266C00027178 /* Map2DViewModel.swift */; };
+		D33870572CBD269000027178 /* MapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870562CBD269000027178 /* MapDataManager.swift */; };
+		D33870592CBD26A900027178 /* MapFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870582CBD26A900027178 /* MapFirestoreManager.swift */; };
+		D338705C2CBD26CB00027178 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338705B2CBD26CB00027178 /* LoginView.swift */; };
+		D338705E2CBD26E000027178 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338705D2CBD26E000027178 /* LoginViewModel.swift */; };
+		D33870602CBD26F600027178 /* LoginDatamanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338705F2CBD26F600027178 /* LoginDatamanager.swift */; };
+		D33870632CBD271B00027178 /* ForgotoPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870622CBD271B00027178 /* ForgotoPasswordView.swift */; };
+		D33870652CBD273500027178 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870642CBD273500027178 /* ForgotPasswordViewModel.swift */; };
+		D33870672CBD274B00027178 /* ForgotPasswordDatamanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870662CBD274B00027178 /* ForgotPasswordDatamanager.swift */; };
+		D33870702CBD2AB400027178 /* TermsConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338706F2CBD2AB400027178 /* TermsConditionsView.swift */; };
+		D33870722CBD2ACE00027178 /* OnboardingOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870712CBD2ACE00027178 /* OnboardingOneView.swift */; };
+		D33870742CBD2AE300027178 /* OnboardingTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870732CBD2AE300027178 /* OnboardingTwoView.swift */; };
+		D33870762CBD2AFC00027178 /* AvatarSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870752CBD2AFC00027178 /* AvatarSelectionView.swift */; };
+		D33870782CBD2B1200027178 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870772CBD2B1200027178 /* ProfileView.swift */; };
+		D338707A2CBD2B2F00027178 /* profileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870792CBD2B2F00027178 /* profileViewModel.swift */; };
+		D338707C2CBD2B4200027178 /* profileDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338707B2CBD2B4200027178 /* profileDataManager.swift */; };
+		D338707E2CBD2B5C00027178 /* VerificationEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338707D2CBD2B5C00027178 /* VerificationEmailView.swift */; };
+		D33870802CBD2B7300027178 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338707F2CBD2B7300027178 /* RegistrationView.swift */; };
+		D33870822CBD2B8D00027178 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870812CBD2B8D00027178 /* RegistrationViewModel.swift */; };
+		D33870842CBD2BA200027178 /* RegistrationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870832CBD2BA200027178 /* RegistrationDataManager.swift */; };
+		D33870902CBD2C2200027178 /* UnifiedAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338708F2CBD2C2200027178 /* UnifiedAnnotation.swift */; };
+		D33870922CBD2C3400027178 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870912CBD2C3400027178 /* Coordinates.swift */; };
+		D33870942CBD2C5300027178 /* ChallengeReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870932CBD2C5300027178 /* ChallengeReward.swift */; };
+		D33870962CBD2C6C00027178 /* ChallengeReward+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870952CBD2C6C00027178 /* ChallengeReward+Firebase.swift */; };
+		D33870982CBD2C8700027178 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870972CBD2C8700027178 /* Challenge.swift */; };
+		D338709A2CBD2C9B00027178 /* Challenge+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870992CBD2C9B00027178 /* Challenge+Firebase.swift */; };
+		D338709C2CBD2CB100027178 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338709B2CBD2CB100027178 /* Spot.swift */; };
+		D338709E2CBD2CBD00027178 /* Spot+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338709D2CBD2CBD00027178 /* Spot+Firebase.swift */; };
+		D33870A02CBD2CCF00027178 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D338709F2CBD2CCF00027178 /* User.swift */; };
+		D33870A22CBD2CE100027178 /* User+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870A12CBD2CE100027178 /* User+Firebase.swift */; };
+		D33870A42CBD2D0100027178 /* LanguageAvailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870A32CBD2D0100027178 /* LanguageAvailable.swift */; };
+		D33870A72CBD2D1800027178 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870A62CBD2D1800027178 /* Translation.swift */; };
+		D33870A92CBD2D2C00027178 /* Translation+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870A82CBD2D2C00027178 /* Translation+Firebase.swift */; };
+		D33870AB2CBD2D8700027178 /* BIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870AA2CBD2D8700027178 /* BIC.swift */; };
+		D33870AD2CBD2D9900027178 /* BIC+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870AC2CBD2D9900027178 /* BIC+Firebase.swift */; };
+		D33870B42CBD2E3100027178 /* TakePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870B32CBD2E3100027178 /* TakePhoto.swift */; };
+		D33870B62CBD2E4600027178 /* Takephoto+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870B52CBD2E4600027178 /* Takephoto+Firebase.swift */; };
+		D33870B92CBD2E5F00027178 /* QuestionAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870B82CBD2E5F00027178 /* QuestionAnswer.swift */; };
+		D33870BB2CBD2E9B00027178 /* QuestionAnswer+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870BA2CBD2E9B00027178 /* QuestionAnswer+Firebase.swift */; };
+		D33870BD2CBD2EAF00027178 /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870BC2CBD2EAF00027178 /* Puzzle.swift */; };
+		D33870BF2CBD2EC500027178 /* Puzzle+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870BE2CBD2EC500027178 /* Puzzle+Firebase.swift */; };
+		D33870C22CBD2F1B00027178 /* PuzzlePiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870C12CBD2F1B00027178 /* PuzzlePiece.swift */; };
+		D33870C42CBD2F2E00027178 /* DatesEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870C32CBD2F2E00027178 /* DatesEvent.swift */; };
+		D33870C62CBD2F4300027178 /* DatesEvent+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870C52CBD2F4300027178 /* DatesEvent+Firebase.swift */; };
+		D33870C82CBD2F5400027178 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870C72CBD2F5400027178 /* Coin.swift */; };
+		D33870CA2CBD2F6800027178 /* Coin+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870C92CBD2F6800027178 /* Coin+Firebase.swift */; };
+		D33870CD2CBD2F9700027178 /* BICFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870CC2CBD2F9700027178 /* BICFirestoreManager.swift */; };
+		D33870CF2CBD2FC100027178 /* BICDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870CE2CBD2FC100027178 /* BICDataManager.swift */; };
+		D33870D12CBD304100027178 /* BICViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870D02CBD304100027178 /* BICViewModel.swift */; };
+		D33870D32CBD305600027178 /* BICView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870D22CBD305600027178 /* BICView.swift */; };
+		D33870D62CBD307400027178 /* BICRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870D52CBD307400027178 /* BICRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +153,125 @@
 		D3386F7E2CBC3EAE00027178 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D3386F812CBC3EAE00027178 /* tenerifeChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tenerifeChallenge.xcdatamodel; sourceTree = "<group>"; };
 		D3386F892CBC3F4E00027178 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D3386F9E2CBD165C00027178 /* BaseMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapViewModel.swift; sourceTree = "<group>"; };
+		D3386FA02CBD167800027178 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		D3386FA32CBD169800027178 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		D3386FA52CBD16A800027178 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		D3386FA82CBD16CF00027178 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		D3386FB42CBD172700027178 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		D3386FB62CBD173E00027178 /* EventWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWebView.swift; sourceTree = "<group>"; };
+		D3386FB82CBD175600027178 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		D3386FBA2CBD177A00027178 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		D3386FBF2CBD17E500027178 /* UserDefaultmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultmanager.swift; sourceTree = "<group>"; };
+		D3386FC12CBD17F900027178 /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
+		D3386FC42CBD184200027178 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		D3386FC72CBD186600027178 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
+		D3386FCB2CBD18A200027178 /* TranslationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationManager.swift; sourceTree = "<group>"; };
+		D3386FD12CBD18E400027178 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		D3386FD32CBD18FA00027178 /* NavigationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
+		D3386FD52CBD191800027178 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D3386FD92CBD19C700027178 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		D3386FDF2CBD1A0B00027178 /* ChallengeListFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListFirestoreManager.swift; sourceTree = "<group>"; };
+		D3386FE12CBD1A3000027178 /* ChallengeListDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListDataManager.swift; sourceTree = "<group>"; };
+		D3386FE32CBD1A4900027178 /* ChallengeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListViewModel.swift; sourceTree = "<group>"; };
+		D3386FE52CBD1A6200027178 /* ChallengeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListView.swift; sourceTree = "<group>"; };
+		D3386FE72CBD1A9300027178 /* ChallengePresentationFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengePresentationFirestoreManager.swift; sourceTree = "<group>"; };
+		D3386FE92CBD1AAA00027178 /* ChallengePresentationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengePresentationDataManager.swift; sourceTree = "<group>"; };
+		D3386FEB2CBD1AC200027178 /* ChallengePresentationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengePresentationViewModel.swift; sourceTree = "<group>"; };
+		D3386FED2CBD1ADC00027178 /* ChallengePresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengePresentationView.swift; sourceTree = "<group>"; };
+		D3386FEF2CBD1B0F00027178 /* ChallengeRewardFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeRewardFirestoreManager.swift; sourceTree = "<group>"; };
+		D3386FF12CBD1C3C00027178 /* ChallengeRewardDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeRewardDataManager.swift; sourceTree = "<group>"; };
+		D3386FF32CBD1C6E00027178 /* ChallengeRewardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeRewardViewModel.swift; sourceTree = "<group>"; };
+		D3386FF52CBD1C8B00027178 /* ChallengeRewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeRewardView.swift; sourceTree = "<group>"; };
+		D3386FFD2CBD20F800027178 /* PuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleView.swift; sourceTree = "<group>"; };
+		D3386FFF2CBD210F00027178 /* PuzzleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleViewModel.swift; sourceTree = "<group>"; };
+		D33870012CBD212200027178 /* PuzzledataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzledataManager.swift; sourceTree = "<group>"; };
+		D33870032CBD213800027178 /* PuzzleFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleFirestoreManager.swift; sourceTree = "<group>"; };
+		D33870052CBD215400027178 /* CoinFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFirestoreManager.swift; sourceTree = "<group>"; };
+		D33870072CBD216700027178 /* CoinDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataManager.swift; sourceTree = "<group>"; };
+		D33870092CBD218200027178 /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
+		D338700B2CBD21AF00027178 /* CoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinView.swift; sourceTree = "<group>"; };
+		D338700D2CBD21C900027178 /* QuestionAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerView.swift; sourceTree = "<group>"; };
+		D338700F2CBD21E400027178 /* QuestionAnswerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerViewModel.swift; sourceTree = "<group>"; };
+		D33870112CBD21FF00027178 /* QuestionAnswerDatamanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerDatamanager.swift; sourceTree = "<group>"; };
+		D33870132CBD221400027178 /* QuestionAnswerFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerFirestoreManager.swift; sourceTree = "<group>"; };
+		D33870152CBD222E00027178 /* DatesorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesorderView.swift; sourceTree = "<group>"; };
+		D33870172CBD224700027178 /* DatesOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesOrderViewModel.swift; sourceTree = "<group>"; };
+		D33870192CBD225900027178 /* DatesOrderDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesOrderDataManager.swift; sourceTree = "<group>"; };
+		D338701B2CBD227300027178 /* DatesorderFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesorderFirestoreManager.swift; sourceTree = "<group>"; };
+		D338701E2CBD229100027178 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		D33870202CBD22A700027178 /* TakePhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoView.swift; sourceTree = "<group>"; };
+		D33870222CBD22CD00027178 /* TakePhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoViewModel.swift; sourceTree = "<group>"; };
+		D33870242CBD22E000027178 /* TakephotoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakephotoDataManager.swift; sourceTree = "<group>"; };
+		D33870262CBD231300027178 /* TakePhotoFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoFirestoreManager.swift; sourceTree = "<group>"; };
+		D338702C2CBD235F00027178 /* SettingProfileFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfileFirestoreManager.swift; sourceTree = "<group>"; };
+		D338702E2CBD237700027178 /* SettingProfiledataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfiledataManager.swift; sourceTree = "<group>"; };
+		D33870302CBD239000027178 /* SettingProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfileViewModel.swift; sourceTree = "<group>"; };
+		D33870322CBD23AF00027178 /* SettingProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfileView.swift; sourceTree = "<group>"; };
+		D33870342CBD23C800027178 /* ContactSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSheetView.swift; sourceTree = "<group>"; };
+		D33870362CBD23DD00027178 /* PolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyView.swift; sourceTree = "<group>"; };
+		D33870382CBD23F800027178 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		D338703B2CBD251900027178 /* UserAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
+		D338703E2CBD253600027178 /* MapContainerview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerview.swift; sourceTree = "<group>"; };
+		D33870412CBD255600027178 /* Map3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map3DView.swift; sourceTree = "<group>"; };
+		D33870432CBD256D00027178 /* Map3DViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map3DViewModel.swift; sourceTree = "<group>"; };
+		D33870452CBD258100027178 /* Map3DDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map3DDataManager.swift; sourceTree = "<group>"; };
+		D33870472CBD25B100027178 /* Map3DFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map3DFirestoreManager.swift; sourceTree = "<group>"; };
+		D338704A2CBD25D100027178 /* MapCallOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCallOutView.swift; sourceTree = "<group>"; };
+		D338704C2CBD25EA00027178 /* CalloutRewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalloutRewardView.swift; sourceTree = "<group>"; };
+		D338704F2CBD260C00027178 /* ChallengeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeSelectionView.swift; sourceTree = "<group>"; };
+		D33870522CBD262900027178 /* Map2DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map2DView.swift; sourceTree = "<group>"; };
+		D33870542CBD266C00027178 /* Map2DViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map2DViewModel.swift; sourceTree = "<group>"; };
+		D33870562CBD269000027178 /* MapDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataManager.swift; sourceTree = "<group>"; };
+		D33870582CBD26A900027178 /* MapFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFirestoreManager.swift; sourceTree = "<group>"; };
+		D338705B2CBD26CB00027178 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D338705D2CBD26E000027178 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D338705F2CBD26F600027178 /* LoginDatamanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDatamanager.swift; sourceTree = "<group>"; };
+		D33870622CBD271B00027178 /* ForgotoPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotoPasswordView.swift; sourceTree = "<group>"; };
+		D33870642CBD273500027178 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		D33870662CBD274B00027178 /* ForgotPasswordDatamanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordDatamanager.swift; sourceTree = "<group>"; };
+		D338706F2CBD2AB400027178 /* TermsConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditionsView.swift; sourceTree = "<group>"; };
+		D33870712CBD2ACE00027178 /* OnboardingOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingOneView.swift; sourceTree = "<group>"; };
+		D33870732CBD2AE300027178 /* OnboardingTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTwoView.swift; sourceTree = "<group>"; };
+		D33870752CBD2AFC00027178 /* AvatarSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSelectionView.swift; sourceTree = "<group>"; };
+		D33870772CBD2B1200027178 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D33870792CBD2B2F00027178 /* profileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewModel.swift; sourceTree = "<group>"; };
+		D338707B2CBD2B4200027178 /* profileDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileDataManager.swift; sourceTree = "<group>"; };
+		D338707D2CBD2B5C00027178 /* VerificationEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationEmailView.swift; sourceTree = "<group>"; };
+		D338707F2CBD2B7300027178 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		D33870812CBD2B8D00027178 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		D33870832CBD2BA200027178 /* RegistrationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDataManager.swift; sourceTree = "<group>"; };
+		D338708F2CBD2C2200027178 /* UnifiedAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedAnnotation.swift; sourceTree = "<group>"; };
+		D33870912CBD2C3400027178 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		D33870932CBD2C5300027178 /* ChallengeReward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeReward.swift; sourceTree = "<group>"; };
+		D33870952CBD2C6C00027178 /* ChallengeReward+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChallengeReward+Firebase.swift"; sourceTree = "<group>"; };
+		D33870972CBD2C8700027178 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		D33870992CBD2C9B00027178 /* Challenge+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+Firebase.swift"; sourceTree = "<group>"; };
+		D338709B2CBD2CB100027178 /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		D338709D2CBD2CBD00027178 /* Spot+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spot+Firebase.swift"; sourceTree = "<group>"; };
+		D338709F2CBD2CCF00027178 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D33870A12CBD2CE100027178 /* User+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Firebase.swift"; sourceTree = "<group>"; };
+		D33870A32CBD2D0100027178 /* LanguageAvailable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageAvailable.swift; sourceTree = "<group>"; };
+		D33870A62CBD2D1800027178 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		D33870A82CBD2D2C00027178 /* Translation+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Translation+Firebase.swift"; sourceTree = "<group>"; };
+		D33870AA2CBD2D8700027178 /* BIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIC.swift; sourceTree = "<group>"; };
+		D33870AC2CBD2D9900027178 /* BIC+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BIC+Firebase.swift"; sourceTree = "<group>"; };
+		D33870B32CBD2E3100027178 /* TakePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhoto.swift; sourceTree = "<group>"; };
+		D33870B52CBD2E4600027178 /* Takephoto+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Takephoto+Firebase.swift"; sourceTree = "<group>"; };
+		D33870B82CBD2E5F00027178 /* QuestionAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswer.swift; sourceTree = "<group>"; };
+		D33870BA2CBD2E9B00027178 /* QuestionAnswer+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionAnswer+Firebase.swift"; sourceTree = "<group>"; };
+		D33870BC2CBD2EAF00027178 /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
+		D33870BE2CBD2EC500027178 /* Puzzle+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Puzzle+Firebase.swift"; sourceTree = "<group>"; };
+		D33870C12CBD2F1B00027178 /* PuzzlePiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzlePiece.swift; sourceTree = "<group>"; };
+		D33870C32CBD2F2E00027178 /* DatesEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesEvent.swift; sourceTree = "<group>"; };
+		D33870C52CBD2F4300027178 /* DatesEvent+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatesEvent+Firebase.swift"; sourceTree = "<group>"; };
+		D33870C72CBD2F5400027178 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		D33870C92CBD2F6800027178 /* Coin+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coin+Firebase.swift"; sourceTree = "<group>"; };
+		D33870CC2CBD2F9700027178 /* BICFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BICFirestoreManager.swift; sourceTree = "<group>"; };
+		D33870CE2CBD2FC100027178 /* BICDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BICDataManager.swift; sourceTree = "<group>"; };
+		D33870D02CBD304100027178 /* BICViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BICViewModel.swift; sourceTree = "<group>"; };
+		D33870D22CBD305600027178 /* BICView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BICView.swift; sourceTree = "<group>"; };
+		D33870D52CBD307400027178 /* BICRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BICRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +279,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3386FAF2CBD16F000027178 /* KeychainSwift in Frameworks */,
 				D3386F972CBC3F8800027178 /* FirebaseMessaging in Frameworks */,
 				D3386F912CBC3F8800027178 /* FirebaseCrashlytics in Frameworks */,
 				D3386F932CBC3F8800027178 /* FirebaseFirestore in Frameworks */,
@@ -46,6 +287,7 @@
 				D3386F992CBC3F8800027178 /* FirebaseStorage in Frameworks */,
 				D3386F8D2CBC3F8800027178 /* FirebaseAnalytics in Frameworks */,
 				D3386F8F2CBC3F8800027178 /* FirebaseAuth in Frameworks */,
+				D3386FAC2CBD16E800027178 /* ZIPFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +313,10 @@
 		D3386F742CBC3EAC00027178 /* tenerifeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				D3386FD72CBD198400027178 /* App */,
+				D3386F9C2CBD159700027178 /* Common */,
+				D3386F9B2CBD159100027178 /* Modules */,
 				D3386F882CBC3F3200027178 /* SupportingFiles */,
-				D3386F752CBC3EAC00027178 /* tenerifeChallengeApp.swift */,
 				D3386F772CBC3EAC00027178 /* ContentView.swift */,
 				D3386F792CBC3EAE00027178 /* Assets.xcassets */,
 				D3386F7E2CBC3EAE00027178 /* Persistence.swift */,
@@ -96,6 +340,691 @@
 				D3386F892CBC3F4E00027178 /* GoogleService-Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D3386F9B2CBD159100027178 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D33870CB2CBD2F8000027178 /* BIC */,
+				D33870852CBD2BB000027178 /* Model */,
+				D33870682CBD276500027178 /* Register */,
+				D338705A2CBD26B600027178 /* Login */,
+				D338703A2CBD250700027178 /* Map */,
+				D33870282CBD231D00027178 /* SettingProfile */,
+				D3386FF72CBD1C9C00027178 /* Task */,
+				D3386FDB2CBD19D100027178 /* Challenge */,
+				D3386FD82CBD199800027178 /* Icon */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D3386F9C2CBD159700027178 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FCD2CBD18B400027178 /* Navigation */,
+				D3386FC62CBD185500027178 /* Firebase */,
+				D3386FC32CBD180800027178 /* Location */,
+				D3386FBC2CBD17C300027178 /* Data */,
+				D3386FB02CBD16F800027178 /* Tools */,
+				D3386FA72CBD16B900027178 /* ARViewController */,
+				D3386FA22CBD168600027178 /* Design */,
+				D3386F9D2CBD15AB00027178 /* Base */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D3386F9D2CBD15AB00027178 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D3386F9E2CBD165C00027178 /* BaseMapViewModel.swift */,
+				D3386FA02CBD167800027178 /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D3386FA22CBD168600027178 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FA32CBD169800027178 /* Background.swift */,
+				D3386FA52CBD16A800027178 /* Color.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		D3386FA72CBD16B900027178 /* ARViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FA82CBD16CF00027178 /* ARViewContainer.swift */,
+			);
+			path = ARViewController;
+			sourceTree = "<group>";
+		};
+		D3386FB02CBD16F800027178 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FB32CBD170F00027178 /* Sounds */,
+				D3386FB22CBD170800027178 /* WebView */,
+				D3386FB12CBD170100027178 /* KeyBoard */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D3386FB12CBD170100027178 /* KeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FB42CBD172700027178 /* KeyboardObserver.swift */,
+			);
+			path = KeyBoard;
+			sourceTree = "<group>";
+		};
+		D3386FB22CBD170800027178 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FB62CBD173E00027178 /* EventWebView.swift */,
+				D3386FB82CBD175600027178 /* WebView.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		D3386FB32CBD170F00027178 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FBA2CBD177A00027178 /* SoundManager.swift */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		D3386FBC2CBD17C300027178 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FBE2CBD17D500027178 /* Keychain */,
+				D3386FBD2CBD17CC00027178 /* UserDefault */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D3386FBD2CBD17CC00027178 /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FBF2CBD17E500027178 /* UserDefaultmanager.swift */,
+			);
+			path = UserDefault;
+			sourceTree = "<group>";
+		};
+		D3386FBE2CBD17D500027178 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FC12CBD17F900027178 /* KeyChainManager.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		D3386FC32CBD180800027178 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FC42CBD184200027178 /* LocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		D3386FC62CBD185500027178 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FCA2CBD188800027178 /* TranslationManager */,
+				D3386FC92CBD187E00027178 /* Auth+FirestoreManager */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		D3386FC92CBD187E00027178 /* Auth+FirestoreManager */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FC72CBD186600027178 /* FirestoreManager.swift */,
+			);
+			path = "Auth+FirestoreManager";
+			sourceTree = "<group>";
+		};
+		D3386FCA2CBD188800027178 /* TranslationManager */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FCB2CBD18A200027178 /* TranslationManager.swift */,
+			);
+			path = TranslationManager;
+			sourceTree = "<group>";
+		};
+		D3386FCD2CBD18B400027178 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FD02CBD18CC00027178 /* AppState */,
+				D3386FCF2CBD18C500027178 /* NavigationState */,
+				D3386FCE2CBD18BD00027178 /* CustomTabBar */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		D3386FCE2CBD18BD00027178 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FD12CBD18E400027178 /* CustomTabBar.swift */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		D3386FCF2CBD18C500027178 /* NavigationState */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FD32CBD18FA00027178 /* NavigationState.swift */,
+			);
+			path = NavigationState;
+			sourceTree = "<group>";
+		};
+		D3386FD02CBD18CC00027178 /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FD52CBD191800027178 /* AppState.swift */,
+			);
+			path = AppState;
+			sourceTree = "<group>";
+		};
+		D3386FD72CBD198400027178 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D3386F752CBC3EAC00027178 /* tenerifeChallengeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D3386FD82CBD199800027178 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FD92CBD19C700027178 /* IconView.swift */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		D3386FDB2CBD19D100027178 /* Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FDE2CBD19E900027178 /* ChallengeReward */,
+				D3386FDD2CBD19E000027178 /* ChallengePresentation */,
+				D3386FDC2CBD19D900027178 /* ChallengeList */,
+			);
+			path = Challenge;
+			sourceTree = "<group>";
+		};
+		D3386FDC2CBD19D900027178 /* ChallengeList */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FDF2CBD1A0B00027178 /* ChallengeListFirestoreManager.swift */,
+				D3386FE12CBD1A3000027178 /* ChallengeListDataManager.swift */,
+				D3386FE32CBD1A4900027178 /* ChallengeListViewModel.swift */,
+				D3386FE52CBD1A6200027178 /* ChallengeListView.swift */,
+			);
+			path = ChallengeList;
+			sourceTree = "<group>";
+		};
+		D3386FDD2CBD19E000027178 /* ChallengePresentation */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FE72CBD1A9300027178 /* ChallengePresentationFirestoreManager.swift */,
+				D3386FE92CBD1AAA00027178 /* ChallengePresentationDataManager.swift */,
+				D3386FEB2CBD1AC200027178 /* ChallengePresentationViewModel.swift */,
+				D3386FED2CBD1ADC00027178 /* ChallengePresentationView.swift */,
+			);
+			path = ChallengePresentation;
+			sourceTree = "<group>";
+		};
+		D3386FDE2CBD19E900027178 /* ChallengeReward */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FEF2CBD1B0F00027178 /* ChallengeRewardFirestoreManager.swift */,
+				D3386FF12CBD1C3C00027178 /* ChallengeRewardDataManager.swift */,
+				D3386FF32CBD1C6E00027178 /* ChallengeRewardViewModel.swift */,
+				D3386FF52CBD1C8B00027178 /* ChallengeRewardView.swift */,
+			);
+			path = ChallengeReward;
+			sourceTree = "<group>";
+		};
+		D3386FF72CBD1C9C00027178 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FFC2CBD1D5900027178 /* TakePhotosTask */,
+				D3386FFB2CBD1D5400027178 /* Dates */,
+				D3386FFA2CBD1D4D00027178 /* QuestionTask */,
+				D3386FF92CBD1D4500027178 /* Coin */,
+				D3386FF82CBD1CA500027178 /* PuzzleTask */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		D3386FF82CBD1CA500027178 /* PuzzleTask */ = {
+			isa = PBXGroup;
+			children = (
+				D3386FFD2CBD20F800027178 /* PuzzleView.swift */,
+				D3386FFF2CBD210F00027178 /* PuzzleViewModel.swift */,
+				D33870012CBD212200027178 /* PuzzledataManager.swift */,
+				D33870032CBD213800027178 /* PuzzleFirestoreManager.swift */,
+			);
+			path = PuzzleTask;
+			sourceTree = "<group>";
+		};
+		D3386FF92CBD1D4500027178 /* Coin */ = {
+			isa = PBXGroup;
+			children = (
+				D33870052CBD215400027178 /* CoinFirestoreManager.swift */,
+				D33870072CBD216700027178 /* CoinDataManager.swift */,
+				D33870092CBD218200027178 /* CoinViewModel.swift */,
+				D338700B2CBD21AF00027178 /* CoinView.swift */,
+			);
+			path = Coin;
+			sourceTree = "<group>";
+		};
+		D3386FFA2CBD1D4D00027178 /* QuestionTask */ = {
+			isa = PBXGroup;
+			children = (
+				D338700D2CBD21C900027178 /* QuestionAnswerView.swift */,
+				D338700F2CBD21E400027178 /* QuestionAnswerViewModel.swift */,
+				D33870112CBD21FF00027178 /* QuestionAnswerDatamanager.swift */,
+				D33870132CBD221400027178 /* QuestionAnswerFirestoreManager.swift */,
+			);
+			path = QuestionTask;
+			sourceTree = "<group>";
+		};
+		D3386FFB2CBD1D5400027178 /* Dates */ = {
+			isa = PBXGroup;
+			children = (
+				D33870152CBD222E00027178 /* DatesorderView.swift */,
+				D33870172CBD224700027178 /* DatesOrderViewModel.swift */,
+				D33870192CBD225900027178 /* DatesOrderDataManager.swift */,
+				D338701B2CBD227300027178 /* DatesorderFirestoreManager.swift */,
+			);
+			path = Dates;
+			sourceTree = "<group>";
+		};
+		D3386FFC2CBD1D5900027178 /* TakePhotosTask */ = {
+			isa = PBXGroup;
+			children = (
+				D338701D2CBD227E00027178 /* Camera */,
+				D33870202CBD22A700027178 /* TakePhotoView.swift */,
+				D33870222CBD22CD00027178 /* TakePhotoViewModel.swift */,
+				D33870242CBD22E000027178 /* TakephotoDataManager.swift */,
+				D33870262CBD231300027178 /* TakePhotoFirestoreManager.swift */,
+			);
+			path = TakePhotosTask;
+			sourceTree = "<group>";
+		};
+		D338701D2CBD227E00027178 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				D338701E2CBD229100027178 /* CameraView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		D33870282CBD231D00027178 /* SettingProfile */ = {
+			isa = PBXGroup;
+			children = (
+				D338702B2CBD233400027178 /* Contact */,
+				D338702A2CBD232D00027178 /* PolicyView */,
+				D33870292CBD232600027178 /* EditProfile */,
+				D338702C2CBD235F00027178 /* SettingProfileFirestoreManager.swift */,
+				D338702E2CBD237700027178 /* SettingProfiledataManager.swift */,
+				D33870302CBD239000027178 /* SettingProfileViewModel.swift */,
+				D33870322CBD23AF00027178 /* SettingProfileView.swift */,
+			);
+			path = SettingProfile;
+			sourceTree = "<group>";
+		};
+		D33870292CBD232600027178 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				D33870382CBD23F800027178 /* EditProfileView.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		D338702A2CBD232D00027178 /* PolicyView */ = {
+			isa = PBXGroup;
+			children = (
+				D33870362CBD23DD00027178 /* PolicyView.swift */,
+			);
+			path = PolicyView;
+			sourceTree = "<group>";
+		};
+		D338702B2CBD233400027178 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				D33870342CBD23C800027178 /* ContactSheetView.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		D338703A2CBD250700027178 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D33870512CBD261B00027178 /* 2D */,
+				D338704E2CBD25F600027178 /* ChallengeSelectionView */,
+				D33870492CBD25C000027178 /* CallOut */,
+				D33870402CBD254500027178 /* 3D */,
+				D338703D2CBD252600027178 /* MapContainer */,
+				D338703B2CBD251900027178 /* UserAnnotation.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		D338703D2CBD252600027178 /* MapContainer */ = {
+			isa = PBXGroup;
+			children = (
+				D338703E2CBD253600027178 /* MapContainerview.swift */,
+			);
+			path = MapContainer;
+			sourceTree = "<group>";
+		};
+		D33870402CBD254500027178 /* 3D */ = {
+			isa = PBXGroup;
+			children = (
+				D33870412CBD255600027178 /* Map3DView.swift */,
+				D33870432CBD256D00027178 /* Map3DViewModel.swift */,
+				D33870452CBD258100027178 /* Map3DDataManager.swift */,
+				D33870472CBD25B100027178 /* Map3DFirestoreManager.swift */,
+			);
+			path = 3D;
+			sourceTree = "<group>";
+		};
+		D33870492CBD25C000027178 /* CallOut */ = {
+			isa = PBXGroup;
+			children = (
+				D338704A2CBD25D100027178 /* MapCallOutView.swift */,
+				D338704C2CBD25EA00027178 /* CalloutRewardView.swift */,
+			);
+			path = CallOut;
+			sourceTree = "<group>";
+		};
+		D338704E2CBD25F600027178 /* ChallengeSelectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D338704F2CBD260C00027178 /* ChallengeSelectionView.swift */,
+			);
+			path = ChallengeSelectionView;
+			sourceTree = "<group>";
+		};
+		D33870512CBD261B00027178 /* 2D */ = {
+			isa = PBXGroup;
+			children = (
+				D33870522CBD262900027178 /* Map2DView.swift */,
+				D33870542CBD266C00027178 /* Map2DViewModel.swift */,
+				D33870562CBD269000027178 /* MapDataManager.swift */,
+				D33870582CBD26A900027178 /* MapFirestoreManager.swift */,
+			);
+			path = 2D;
+			sourceTree = "<group>";
+		};
+		D338705A2CBD26B600027178 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D33870612CBD270200027178 /* FortgotPassword */,
+				D338705B2CBD26CB00027178 /* LoginView.swift */,
+				D338705D2CBD26E000027178 /* LoginViewModel.swift */,
+				D338705F2CBD26F600027178 /* LoginDatamanager.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D33870612CBD270200027178 /* FortgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				D33870622CBD271B00027178 /* ForgotoPasswordView.swift */,
+				D33870642CBD273500027178 /* ForgotPasswordViewModel.swift */,
+				D33870662CBD274B00027178 /* ForgotPasswordDatamanager.swift */,
+			);
+			path = FortgotPassword;
+			sourceTree = "<group>";
+		};
+		D33870682CBD276500027178 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D338706E2CBD279100027178 /* registration */,
+				D338706D2CBD278A00027178 /* VerificationEmail */,
+				D338706C2CBD278200027178 /* profileData */,
+				D338706B2CBD277C00027178 /* Avatar */,
+				D338706A2CBD277700027178 /* Onboarding */,
+				D33870692CBD277200027178 /* Terms */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		D33870692CBD277200027178 /* Terms */ = {
+			isa = PBXGroup;
+			children = (
+				D338706F2CBD2AB400027178 /* TermsConditionsView.swift */,
+			);
+			path = Terms;
+			sourceTree = "<group>";
+		};
+		D338706A2CBD277700027178 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D33870712CBD2ACE00027178 /* OnboardingOneView.swift */,
+				D33870732CBD2AE300027178 /* OnboardingTwoView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D338706B2CBD277C00027178 /* Avatar */ = {
+			isa = PBXGroup;
+			children = (
+				D33870752CBD2AFC00027178 /* AvatarSelectionView.swift */,
+			);
+			path = Avatar;
+			sourceTree = "<group>";
+		};
+		D338706C2CBD278200027178 /* profileData */ = {
+			isa = PBXGroup;
+			children = (
+				D33870772CBD2B1200027178 /* ProfileView.swift */,
+				D33870792CBD2B2F00027178 /* profileViewModel.swift */,
+				D338707B2CBD2B4200027178 /* profileDataManager.swift */,
+			);
+			path = profileData;
+			sourceTree = "<group>";
+		};
+		D338706D2CBD278A00027178 /* VerificationEmail */ = {
+			isa = PBXGroup;
+			children = (
+				D338707D2CBD2B5C00027178 /* VerificationEmailView.swift */,
+			);
+			path = VerificationEmail;
+			sourceTree = "<group>";
+		};
+		D338706E2CBD279100027178 /* registration */ = {
+			isa = PBXGroup;
+			children = (
+				D338707F2CBD2B7300027178 /* RegistrationView.swift */,
+				D33870812CBD2B8D00027178 /* RegistrationViewModel.swift */,
+				D33870832CBD2BA200027178 /* RegistrationDataManager.swift */,
+			);
+			path = registration;
+			sourceTree = "<group>";
+		};
+		D33870852CBD2BB000027178 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D338708D2CBD2C0100027178 /* language */,
+				D338708C2CBD2BED00027178 /* BICModel */,
+				D338708B2CBD2BE300027178 /* Activity */,
+				D338708A2CBD2BDE00027178 /* User */,
+				D33870892CBD2BD900027178 /* Spot */,
+				D33870882CBD2BD200027178 /* ChallengeModel */,
+				D33870872CBD2BC000027178 /* ChallengeRewardModel */,
+				D33870862CBD2BB800027178 /* Coordinates */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D33870862CBD2BB800027178 /* Coordinates */ = {
+			isa = PBXGroup;
+			children = (
+				D338708E2CBD2C0B00027178 /* UnifiedSpot */,
+				D33870912CBD2C3400027178 /* Coordinates.swift */,
+			);
+			path = Coordinates;
+			sourceTree = "<group>";
+		};
+		D33870872CBD2BC000027178 /* ChallengeRewardModel */ = {
+			isa = PBXGroup;
+			children = (
+				D33870932CBD2C5300027178 /* ChallengeReward.swift */,
+				D33870952CBD2C6C00027178 /* ChallengeReward+Firebase.swift */,
+			);
+			path = ChallengeRewardModel;
+			sourceTree = "<group>";
+		};
+		D33870882CBD2BD200027178 /* ChallengeModel */ = {
+			isa = PBXGroup;
+			children = (
+				D33870972CBD2C8700027178 /* Challenge.swift */,
+				D33870992CBD2C9B00027178 /* Challenge+Firebase.swift */,
+			);
+			path = ChallengeModel;
+			sourceTree = "<group>";
+		};
+		D33870892CBD2BD900027178 /* Spot */ = {
+			isa = PBXGroup;
+			children = (
+				D338709B2CBD2CB100027178 /* Spot.swift */,
+				D338709D2CBD2CBD00027178 /* Spot+Firebase.swift */,
+			);
+			path = Spot;
+			sourceTree = "<group>";
+		};
+		D338708A2CBD2BDE00027178 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				D338709F2CBD2CCF00027178 /* User.swift */,
+				D33870A12CBD2CE100027178 /* User+Firebase.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		D338708B2CBD2BE300027178 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				D33870B22CBD2DD300027178 /* Coin */,
+				D33870B12CBD2DCB00027178 /* Dates */,
+				D33870B02CBD2DC400027178 /* Puzzle */,
+				D33870AF2CBD2DBE00027178 /* Question */,
+				D33870AE2CBD2DAB00027178 /* TakePhoto */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		D338708C2CBD2BED00027178 /* BICModel */ = {
+			isa = PBXGroup;
+			children = (
+				D33870AA2CBD2D8700027178 /* BIC.swift */,
+				D33870AC2CBD2D9900027178 /* BIC+Firebase.swift */,
+			);
+			path = BICModel;
+			sourceTree = "<group>";
+		};
+		D338708D2CBD2C0100027178 /* language */ = {
+			isa = PBXGroup;
+			children = (
+				D33870A52CBD2D0C00027178 /* Translate */,
+				D33870A32CBD2D0100027178 /* LanguageAvailable.swift */,
+			);
+			path = language;
+			sourceTree = "<group>";
+		};
+		D338708E2CBD2C0B00027178 /* UnifiedSpot */ = {
+			isa = PBXGroup;
+			children = (
+				D338708F2CBD2C2200027178 /* UnifiedAnnotation.swift */,
+			);
+			path = UnifiedSpot;
+			sourceTree = "<group>";
+		};
+		D33870A52CBD2D0C00027178 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				D33870A62CBD2D1800027178 /* Translation.swift */,
+				D33870A82CBD2D2C00027178 /* Translation+Firebase.swift */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		D33870AE2CBD2DAB00027178 /* TakePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				D33870B32CBD2E3100027178 /* TakePhoto.swift */,
+				D33870B52CBD2E4600027178 /* Takephoto+Firebase.swift */,
+			);
+			path = TakePhoto;
+			sourceTree = "<group>";
+		};
+		D33870AF2CBD2DBE00027178 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				D33870B82CBD2E5F00027178 /* QuestionAnswer.swift */,
+				D33870BA2CBD2E9B00027178 /* QuestionAnswer+Firebase.swift */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		D33870B02CBD2DC400027178 /* Puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				D33870C02CBD2EFF00027178 /* PuzzlePiece */,
+				D33870BC2CBD2EAF00027178 /* Puzzle.swift */,
+				D33870BE2CBD2EC500027178 /* Puzzle+Firebase.swift */,
+			);
+			path = Puzzle;
+			sourceTree = "<group>";
+		};
+		D33870B12CBD2DCB00027178 /* Dates */ = {
+			isa = PBXGroup;
+			children = (
+				D33870C32CBD2F2E00027178 /* DatesEvent.swift */,
+				D33870C52CBD2F4300027178 /* DatesEvent+Firebase.swift */,
+			);
+			path = Dates;
+			sourceTree = "<group>";
+		};
+		D33870B22CBD2DD300027178 /* Coin */ = {
+			isa = PBXGroup;
+			children = (
+				D33870C72CBD2F5400027178 /* Coin.swift */,
+				D33870C92CBD2F6800027178 /* Coin+Firebase.swift */,
+			);
+			path = Coin;
+			sourceTree = "<group>";
+		};
+		D33870C02CBD2EFF00027178 /* PuzzlePiece */ = {
+			isa = PBXGroup;
+			children = (
+				D33870C12CBD2F1B00027178 /* PuzzlePiece.swift */,
+			);
+			path = PuzzlePiece;
+			sourceTree = "<group>";
+		};
+		D33870CB2CBD2F8000027178 /* BIC */ = {
+			isa = PBXGroup;
+			children = (
+				D33870D42CBD306200027178 /* BICrow */,
+				D33870CC2CBD2F9700027178 /* BICFirestoreManager.swift */,
+				D33870CE2CBD2FC100027178 /* BICDataManager.swift */,
+				D33870D02CBD304100027178 /* BICViewModel.swift */,
+				D33870D22CBD305600027178 /* BICView.swift */,
+			);
+			path = BIC;
+			sourceTree = "<group>";
+		};
+		D33870D42CBD306200027178 /* BICrow */ = {
+			isa = PBXGroup;
+			children = (
+				D33870D52CBD307400027178 /* BICRow.swift */,
+			);
+			path = BICrow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +1052,8 @@
 				D3386F942CBC3F8800027178 /* FirebaseFunctions */,
 				D3386F962CBC3F8800027178 /* FirebaseMessaging */,
 				D3386F982CBC3F8800027178 /* FirebaseStorage */,
+				D3386FAB2CBD16E800027178 /* ZIPFoundation */,
+				D3386FAE2CBD16F000027178 /* KeychainSwift */,
 			);
 			productName = tenerifeChallenge;
 			productReference = D3386F722CBC3EAC00027178 /* tenerifeChallenge.app */;
@@ -154,6 +1085,8 @@
 			mainGroup = D3386F692CBC3EAC00027178;
 			packageReferences = (
 				D3386F8B2CBC3F8800027178 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D3386FAA2CBD16E800027178 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				D3386FAD2CBD16F000027178 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			productRefGroup = D3386F732CBC3EAC00027178 /* Products */;
 			projectDirPath = "";
@@ -207,10 +1140,129 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3386FB52CBD172700027178 /* KeyboardObserver.swift in Sources */,
+				D33870BF2CBD2EC500027178 /* Puzzle+Firebase.swift in Sources */,
+				D33870BD2CBD2EAF00027178 /* Puzzle.swift in Sources */,
+				D33870422CBD255600027178 /* Map3DView.swift in Sources */,
+				D33870762CBD2AFC00027178 /* AvatarSelectionView.swift in Sources */,
+				D338704D2CBD25EA00027178 /* CalloutRewardView.swift in Sources */,
 				D3386F7F2CBC3EAE00027178 /* Persistence.swift in Sources */,
+				D33870D62CBD307400027178 /* BICRow.swift in Sources */,
+				D33870572CBD269000027178 /* MapDataManager.swift in Sources */,
+				D3386FD22CBD18E400027178 /* CustomTabBar.swift in Sources */,
+				D3386FC02CBD17E500027178 /* UserDefaultmanager.swift in Sources */,
+				D33870122CBD21FF00027178 /* QuestionAnswerDatamanager.swift in Sources */,
+				D33870252CBD22E000027178 /* TakephotoDataManager.swift in Sources */,
+				D33870602CBD26F600027178 /* LoginDatamanager.swift in Sources */,
+				D33870632CBD271B00027178 /* ForgotoPasswordView.swift in Sources */,
+				D338709A2CBD2C9B00027178 /* Challenge+Firebase.swift in Sources */,
+				D33870B42CBD2E3100027178 /* TakePhoto.swift in Sources */,
+				D33870142CBD221400027178 /* QuestionAnswerFirestoreManager.swift in Sources */,
+				D33870962CBD2C6C00027178 /* ChallengeReward+Firebase.swift in Sources */,
+				D33870A22CBD2CE100027178 /* User+Firebase.swift in Sources */,
+				D33870C62CBD2F4300027178 /* DatesEvent+Firebase.swift in Sources */,
+				D33870A42CBD2D0100027178 /* LanguageAvailable.swift in Sources */,
+				D3386FA42CBD169800027178 /* Background.swift in Sources */,
+				D33870AB2CBD2D8700027178 /* BIC.swift in Sources */,
+				D338704B2CBD25D100027178 /* MapCallOutView.swift in Sources */,
+				D3386FDA2CBD19C700027178 /* IconView.swift in Sources */,
+				D338705E2CBD26E000027178 /* LoginViewModel.swift in Sources */,
+				D338707E2CBD2B5C00027178 /* VerificationEmailView.swift in Sources */,
+				D3386FE02CBD1A0B00027178 /* ChallengeListFirestoreManager.swift in Sources */,
+				D3386FC52CBD184200027178 /* LocationManager.swift in Sources */,
+				D33870D32CBD305600027178 /* BICView.swift in Sources */,
+				D3386FF42CBD1C6E00027178 /* ChallengeRewardViewModel.swift in Sources */,
+				D338700C2CBD21AF00027178 /* CoinView.swift in Sources */,
+				D338701F2CBD229100027178 /* CameraView.swift in Sources */,
 				D3386F782CBC3EAC00027178 /* ContentView.swift in Sources */,
+				D33870902CBD2C2200027178 /* UnifiedAnnotation.swift in Sources */,
+				D33870702CBD2AB400027178 /* TermsConditionsView.swift in Sources */,
+				D33870722CBD2ACE00027178 /* OnboardingOneView.swift in Sources */,
+				D3386FBB2CBD177A00027178 /* SoundManager.swift in Sources */,
+				D33870102CBD21E400027178 /* QuestionAnswerViewModel.swift in Sources */,
+				D33870B92CBD2E5F00027178 /* QuestionAnswer.swift in Sources */,
 				D3386F762CBC3EAC00027178 /* tenerifeChallengeApp.swift in Sources */,
+				D33870462CBD258100027178 /* Map3DDataManager.swift in Sources */,
+				D33870D12CBD304100027178 /* BICViewModel.swift in Sources */,
+				D3386FD62CBD191800027178 /* AppState.swift in Sources */,
+				D33870482CBD25B100027178 /* Map3DFirestoreManager.swift in Sources */,
+				D3386FD42CBD18FA00027178 /* NavigationState.swift in Sources */,
+				D33870082CBD216700027178 /* CoinDataManager.swift in Sources */,
+				D33870C22CBD2F1B00027178 /* PuzzlePiece.swift in Sources */,
+				D33870022CBD212200027178 /* PuzzledataManager.swift in Sources */,
+				D33870B62CBD2E4600027178 /* Takephoto+Firebase.swift in Sources */,
+				D33870372CBD23DD00027178 /* PolicyView.swift in Sources */,
+				D33870A02CBD2CCF00027178 /* User.swift in Sources */,
+				D3386FF02CBD1B0F00027178 /* ChallengeRewardFirestoreManager.swift in Sources */,
+				D338709E2CBD2CBD00027178 /* Spot+Firebase.swift in Sources */,
+				D3386FE22CBD1A3000027178 /* ChallengeListDataManager.swift in Sources */,
+				D33870232CBD22CD00027178 /* TakePhotoViewModel.swift in Sources */,
+				D33870802CBD2B7300027178 /* RegistrationView.swift in Sources */,
+				D338701C2CBD227300027178 /* DatesorderFirestoreManager.swift in Sources */,
+				D3386FC22CBD17F900027178 /* KeyChainManager.swift in Sources */,
+				D33870312CBD239000027178 /* SettingProfileViewModel.swift in Sources */,
+				D33870332CBD23AF00027178 /* SettingProfileView.swift in Sources */,
+				D33870982CBD2C8700027178 /* Challenge.swift in Sources */,
+				D33870C42CBD2F2E00027178 /* DatesEvent.swift in Sources */,
+				D3386FF22CBD1C3C00027178 /* ChallengeRewardDataManager.swift in Sources */,
+				D33870672CBD274B00027178 /* ForgotPasswordDatamanager.swift in Sources */,
+				D33870442CBD256D00027178 /* Map3DViewModel.swift in Sources */,
+				D3386FEC2CBD1AC200027178 /* ChallengePresentationViewModel.swift in Sources */,
+				D338709C2CBD2CB100027178 /* Spot.swift in Sources */,
+				D33870272CBD231300027178 /* TakePhotoFirestoreManager.swift in Sources */,
+				D33870592CBD26A900027178 /* MapFirestoreManager.swift in Sources */,
+				D33870922CBD2C3400027178 /* Coordinates.swift in Sources */,
+				D3386FB72CBD173E00027178 /* EventWebView.swift in Sources */,
+				D3386FE82CBD1A9300027178 /* ChallengePresentationFirestoreManager.swift in Sources */,
+				D3386FEE2CBD1ADC00027178 /* ChallengePresentationView.swift in Sources */,
+				D3386FEA2CBD1AAA00027178 /* ChallengePresentationDataManager.swift in Sources */,
+				D33870182CBD224700027178 /* DatesOrderViewModel.swift in Sources */,
+				D33870942CBD2C5300027178 /* ChallengeReward.swift in Sources */,
+				D33870AD2CBD2D9900027178 /* BIC+Firebase.swift in Sources */,
+				D3386FE42CBD1A4900027178 /* ChallengeListViewModel.swift in Sources */,
+				D338700E2CBD21C900027178 /* QuestionAnswerView.swift in Sources */,
+				D33870742CBD2AE300027178 /* OnboardingTwoView.swift in Sources */,
+				D33870782CBD2B1200027178 /* ProfileView.swift in Sources */,
+				D3386FFE2CBD20F800027178 /* PuzzleView.swift in Sources */,
+				D3386F9F2CBD165C00027178 /* BaseMapViewModel.swift in Sources */,
+				D338701A2CBD225900027178 /* DatesOrderDataManager.swift in Sources */,
+				D33870552CBD266C00027178 /* Map2DViewModel.swift in Sources */,
+				D33870002CBD210F00027178 /* PuzzleViewModel.swift in Sources */,
+				D33870652CBD273500027178 /* ForgotPasswordViewModel.swift in Sources */,
+				D338700A2CBD218200027178 /* CoinViewModel.swift in Sources */,
+				D338705C2CBD26CB00027178 /* LoginView.swift in Sources */,
+				D338703F2CBD253600027178 /* MapContainerview.swift in Sources */,
+				D33870842CBD2BA200027178 /* RegistrationDataManager.swift in Sources */,
+				D33870CD2CBD2F9700027178 /* BICFirestoreManager.swift in Sources */,
+				D3386FA92CBD16CF00027178 /* ARViewContainer.swift in Sources */,
+				D33870212CBD22A700027178 /* TakePhotoView.swift in Sources */,
+				D3386FA62CBD16A800027178 /* Color.swift in Sources */,
+				D33870A72CBD2D1800027178 /* Translation.swift in Sources */,
+				D338703C2CBD251900027178 /* UserAnnotation.swift in Sources */,
+				D3386FCC2CBD18A200027178 /* TranslationManager.swift in Sources */,
+				D33870532CBD262900027178 /* Map2DView.swift in Sources */,
+				D33870CF2CBD2FC100027178 /* BICDataManager.swift in Sources */,
+				D3386FB92CBD175600027178 /* WebView.swift in Sources */,
+				D33870A92CBD2D2C00027178 /* Translation+Firebase.swift in Sources */,
+				D33870C82CBD2F5400027178 /* Coin.swift in Sources */,
+				D338707C2CBD2B4200027178 /* profileDataManager.swift in Sources */,
+				D3386FE62CBD1A6200027178 /* ChallengeListView.swift in Sources */,
 				D3386F822CBC3EAE00027178 /* tenerifeChallenge.xcdatamodeld in Sources */,
+				D33870392CBD23F800027178 /* EditProfileView.swift in Sources */,
+				D33870502CBD260C00027178 /* ChallengeSelectionView.swift in Sources */,
+				D338702F2CBD237700027178 /* SettingProfiledataManager.swift in Sources */,
+				D338707A2CBD2B2F00027178 /* profileViewModel.swift in Sources */,
+				D33870BB2CBD2E9B00027178 /* QuestionAnswer+Firebase.swift in Sources */,
+				D3386FF62CBD1C8B00027178 /* ChallengeRewardView.swift in Sources */,
+				D33870352CBD23C800027178 /* ContactSheetView.swift in Sources */,
+				D3386FC82CBD186600027178 /* FirestoreManager.swift in Sources */,
+				D33870062CBD215400027178 /* CoinFirestoreManager.swift in Sources */,
+				D338702D2CBD235F00027178 /* SettingProfileFirestoreManager.swift in Sources */,
+				D33870822CBD2B8D00027178 /* RegistrationViewModel.swift in Sources */,
+				D3386FA12CBD167800027178 /* BaseViewModel.swift in Sources */,
+				D33870CA2CBD2F6800027178 /* Coin+Firebase.swift in Sources */,
+				D33870042CBD213800027178 /* PuzzleFirestoreManager.swift in Sources */,
+				D33870162CBD222E00027178 /* DatesorderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +1478,22 @@
 				minimumVersion = 11.3.0;
 			};
 		};
+		D3386FAA2CBD16E800027178 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.19;
+			};
+		};
+		D3386FAD2CBD16F000027178 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -463,6 +1531,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D3386F8B2CBC3F8800027178 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		D3386FAB2CBD16E800027178 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3386FAA2CBD16E800027178 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		D3386FAE2CBD16F000027178 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3386FAD2CBD16F000027178 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 
