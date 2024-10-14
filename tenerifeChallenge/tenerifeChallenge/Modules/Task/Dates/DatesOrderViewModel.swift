@@ -30,6 +30,14 @@ class DatesOrderViewModel: BaseViewModel {
         fetchAvailableLanguages()
     }
     
+    func existSelectedEvent(event: String, datesArray: [String]) -> Bool {
+        if datesArray.contains(event) {
+            return true
+        }
+        
+        return false
+    }
+    
     func fetchDateEvent() {
         isLoading = true
         dataManager.fetchDateEventById(activityId)
@@ -51,7 +59,10 @@ class DatesOrderViewModel: BaseViewModel {
     }
     
     func selectEvent(_ event: String) {
-        selectedEvents.append(event)
+        if !existSelectedEvent(event: event, datesArray: selectedEvents) {
+            selectedEvents.append(event)
+
+        }
     }
     
     func undoSelection() {
