@@ -71,7 +71,7 @@ struct ResultChallengeRewardView: View {
 
     var body: some View {
         ZStack {
-            Fondo() // Usamos el fondo común
+            Fondo() 
             
             VStack {
                 Text(viewModel.resultMessage)
@@ -84,8 +84,8 @@ struct ResultChallengeRewardView: View {
                     appState.currentView = .map
                 }
                 .padding()
-                .background(Color.mateBlueMedium) // Usamos mateBlueMedium en lugar de mateRed
-                .foregroundColor(.mateWhite) // Usamos mateWhite
+                .background(Color.mateBlueMedium)
+                .foregroundColor(.mateWhite) 
                 .cornerRadius(10)
             }
             .padding()

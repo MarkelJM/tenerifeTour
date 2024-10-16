@@ -81,46 +81,7 @@ class FirestoreManager {
         }
         .eraseToAnyPublisher()
     }
-    /*
-    func updateUserTaskIDs(taskID: String, challenge: String) -> AnyPublisher<Void, Error> {
-        Future { promise in
-            guard let uid = self.auth.currentUser?.uid else {
-                promise(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "User ID not found"])))
-                return
-            }
 
-            let userRef = self.db.collection("users").document(uid)
-            userRef.getDocument { document, error in
-                if let error = error {
-                    promise(.failure(error))
-                } else if let document = document, document.exists {
-                    var data = document.data() ?? [:]
-                    
-                    // Actualizar el campo "challenges" en Firestore
-                    var challenges = data["challenges"] as? [String: [String]] ?? [:]
-                    if challenges[challenge] != nil {
-                        challenges[challenge]?.append(taskID)
-                    } else {
-                        challenges[challenge] = [taskID]
-                    }
-
-                    data["challenges"] = challenges
-
-                    userRef.setData(data) { error in
-                        if let error = error {
-                            promise(.failure(error))
-                        } else {
-                            promise(.success(()))
-                        }
-                    }
-                } else {
-                    promise(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Document does not exist"])))
-                }
-            }
-        }
-        .eraseToAnyPublisher()
-    }
-     */
     
     func updateUserTaskIDs(taskID: String, challenge: String) -> AnyPublisher<Void, Error> {
         guard let userID = Auth.auth().currentUser?.uid else {
@@ -131,7 +92,7 @@ class FirestoreManager {
         
         return Future { promise in
             userRef.updateData([
-                "challengeEuskadi.\(challenge)": FieldValue.arrayUnion([taskID])
+                "challengeTenerife.\(challenge)": FieldValue.arrayUnion([taskID])
             ]) { error in
                 if let error = error {
                     promise(.failure(error))
@@ -287,7 +248,7 @@ class FirestoreManager {
                     var data = document.data() ?? [:]
                     
                     // Actualizar el campo "challenges" en Firestore
-                    data["challengeEuskadi"] = user.challenges
+                    data["challengeTenerife"] = user.challenges
                     
                     userRef.setData(data) { error in
                         if let error = error {

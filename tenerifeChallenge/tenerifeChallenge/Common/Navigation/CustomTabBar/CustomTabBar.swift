@@ -45,7 +45,7 @@ struct CustomTabBar: View {
                 .frame(maxWidth: .infinity)
 
                 Button(action: {
-                    selectedTab = .eventView
+                    selectedTab = .bic
                 }) {
                     VStack {
                         Image(systemName: "calendar")

@@ -13,7 +13,6 @@ struct ProfileView: View {
 
     var body: some View {
         ZStack {
-            // Fondo con gradiente suave o imagen de fondo
             Fondo()
 
             ScrollView {
@@ -25,7 +24,7 @@ struct ProfileView: View {
                             Image(systemName: "chevron.left")
                                 .font(.headline)
                                 .padding()
-                                .background(Color.mateGold) // Usamos mateGold
+                                .background(Color.mateGold)
                                 .foregroundColor(.black)
                                 .cornerRadius(10)
                         }
@@ -35,43 +34,43 @@ struct ProfileView: View {
                     Text("Perfil")
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                        .foregroundColor(.mateGold) // Usamos mateGold
+                        .foregroundColor(.mateGold)
                         .padding(.top, 50)
 
                     TextField("Nombre", text: $viewModel.firstName)
                         .padding()
-                        .background(Color.mateWhite.opacity(0.8)) // Usamos mateWhite
+                        .background(Color.mateWhite.opacity(0.8))
                         .cornerRadius(10)
                         .padding(.horizontal, 40)
 
                     TextField("Apellido", text: $viewModel.lastName)
                         .padding()
-                        .background(Color.mateWhite.opacity(0.8)) // Usamos mateWhite
+                        .background(Color.mateWhite.opacity(0.8))
                         .cornerRadius(10)
                         .padding(.horizontal, 40)
 
                     DatePicker("Fecha de Nacimiento", selection: $viewModel.birthDate, displayedComponents: .date)
                         .padding()
-                        .background(Color.mateWhite.opacity(0.8)) // Usamos mateWhite
+                        .background(Color.mateWhite.opacity(0.8))
                         .cornerRadius(10)
                         .padding(.horizontal, 40)
 
                     TextField("Código Postal", text: $viewModel.postalCode)
                         .padding()
-                        .background(Color.mateWhite.opacity(0.8)) // Usamos mateWhite
+                        .background(Color.mateWhite.opacity(0.8))
                         .cornerRadius(10)
                         .padding(.horizontal, 40)
 
                     TextField("Ciudad", text: $viewModel.city)
                         .padding()
-                        .background(Color.mateWhite.opacity(0.8)) // Usamos mateWhite
+                        .background(Color.mateWhite.opacity(0.8))
                         .cornerRadius(10)
                         .padding(.horizontal, 40)
 
                     VStack(alignment: .leading, spacing: 5) {
                         Text("Selecciona tu provincia")
                             .font(.headline)
-                            .foregroundColor(.mateGold) // Usamos mateGold
+                            .foregroundColor(.mateGold)
                             .padding(.horizontal, 40)
 
                         Picker("Provincia", selection: $viewModel.province) {
@@ -81,7 +80,7 @@ struct ProfileView: View {
                         }
                         .pickerStyle(MenuPickerStyle())
                         .padding()
-                        .background(Color.mateWhite.opacity(0.8)) // Usamos mateWhite
+                        .background(Color.mateWhite.opacity(0.8))
                         .cornerRadius(10)
                         .padding(.horizontal, 40)
                     }
@@ -96,10 +95,10 @@ struct ProfileView: View {
                         }
                     }) {
                         Text("Guardar Perfil")
-                            .foregroundColor(.mateWhite) // Texto blanco
+                            .foregroundColor(.mateWhite)
                             .padding()
                             .frame(maxWidth: .infinity)
-                            .background(Color.mateGold) // Fondo oro mate
+                            .background(Color.mateGold)
                             .cornerRadius(10)
                     }
                     .padding(.bottom, 50)

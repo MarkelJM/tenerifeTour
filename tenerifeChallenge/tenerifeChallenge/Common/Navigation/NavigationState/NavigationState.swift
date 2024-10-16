@@ -17,7 +17,7 @@ struct NavigationState: View {
 
     private var shouldShowTabBar: Bool {
         switch appState.currentView {
-        case .mapContainer, .challengeList, .settings, .eventView:
+        case .mapContainer, .challengeList, .settings, .bic:
             return true
         default:
             return false
@@ -85,6 +85,8 @@ struct NavigationState: View {
             CoinView(viewModel: CoinViewModel(activityId: id, appState: appState))
         case .dates(let id):
             DatesOrderView(viewModel: DatesOrderViewModel(activityId: id, appState: appState))
+        case .fillGap(let id):
+            FillGapView(viewModel: FillGapViewModel(activityId: id, appState: appState))
 
         case .questionAnswer(let id):
             QuestionAnswerView(viewModel: QuestionAnswerViewModel(activityId: id, appState: appState))
@@ -102,7 +104,7 @@ struct NavigationState: View {
             ChallengePresentationView(viewModel: ChallengePresentationViewModel(challengeName: challengeName))
         case .settings:
             SettingProfileView()
-        case .eventView:
+        case .bic:
             BICView()
         }
     }

@@ -20,7 +20,6 @@ class SettingProfileViewModel: BaseViewModel {
     @Published var isEditing = false
     @Published var isSoundEnabled: Bool = true
 
-    //private let userDefaultsManager = UserDefaultsManager()
 
     override init() {
         super.init()

@@ -15,7 +15,7 @@ struct PuzzleView: View {
     
     var body: some View {
         ZStack {
-            Fondo() // Usamos el fondo común
+            Fondo()
 
             ScrollView {
                 VStack {
@@ -47,7 +47,7 @@ struct PuzzleView: View {
                                 }) {
                                     Text("Comprobar Puzzle")
                                         .padding()
-                                        .background(Color.mateBlueMedium) // Usamos mateBlueMedium
+                                        .background(Color.mateBlueMedium)
                                         .foregroundColor(.mateWhite)
                                         .cornerRadius(10)
                                 }
@@ -171,7 +171,7 @@ struct ResulPuzzleSheetView: View {
 
     var body: some View {
         ZStack {
-            Fondo() // Fondo común
+            Fondo()
 
             VStack {
                 
@@ -191,9 +191,9 @@ struct ResulPuzzleSheetView: View {
                     }
                 }
 
-                // Botón para mostrar la traducción en Euskera
+                // Botón para mostrar la traducción en ingles
                 Button(action: {
-                    viewModel.fetchTranslationForActivity(activityId: viewModel.activityId)  // Cargar la traducción en Euskera
+                    viewModel.fetchTranslationForActivity(activityId: viewModel.activityId)
                 }) {
                     Label("Mostrar traducción en Euskera", systemImage: "globe")
                         .padding()
@@ -225,7 +225,6 @@ struct ResulPuzzleSheetView: View {
         }
         .onAppear {
             soundManager.playWinnerSound()
-            //viewModel.fetchPuzzle()  // Cargar los datos del puzzle
         }
     }
 }
@@ -263,7 +262,6 @@ struct TranslationSheetPuzzleView: View {
             }
             .padding()
 
-            // Botón para cerrar el sheet
             Button(action: {
                 viewModel.showTranslationSheet = false  // Cerrar el sheet
                 appState.currentView = .mapContainer

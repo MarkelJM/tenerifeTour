@@ -16,13 +16,13 @@ struct CoinView: View {
 
     var body: some View {
         ZStack {
-            Fondo() // Usamos el fondo común
+            Fondo()
             
             VStack(spacing: 20) {
                 if viewModel.isLoading {
                     Text("Cargando datos...")
                         .font(.title2)
-                        .foregroundColor(.mateWhite) // Color mateWhite
+                        .foregroundColor(.mateWhite)
                 } else if let errorMessage = viewModel.errorMessage {
                     Text("Error: \(errorMessage)")
                         .foregroundColor(.red)
@@ -31,7 +31,7 @@ struct CoinView: View {
                         .edgesIgnoringSafeArea(.all)
                 } else {
                     Text("No hay datos disponibles")
-                        .foregroundColor(.mateWhite) // Color mateWhite
+                        .foregroundColor(.mateWhite)
                 }
             }
             
@@ -43,7 +43,7 @@ struct CoinView: View {
                         Image(systemName: "chevron.left")
                             .font(.headline)
                             .padding()
-                            .background(Color.mateGold) // Usamos mateGold
+                            .background(Color.mateGold)
                             .foregroundColor(.black)
                             .cornerRadius(10)
                             .padding(.top, 100)
@@ -72,7 +72,7 @@ struct ResultCoinView: View {
 
     var body: some View {
         ZStack {
-            Fondo() // Fondo común
+            Fondo()
 
             VStack {
                 
@@ -93,7 +93,7 @@ struct ResultCoinView: View {
 
                 // Botón para mostrar la traducción
                 Button(action: {
-                    viewModel.fetchTranslationForActivity(activityId: viewModel.activityId)  // Buscar traducción en Euskera
+                    viewModel.fetchTranslationForActivity(activityId: viewModel.activityId)
                     showTranslationSheet = true
                 }) {
                     Label("Mostrar traducción en Euskera", systemImage: "globe")
@@ -163,7 +163,6 @@ struct TranslationSheetCoinView: View {
             }
             .padding()
 
-            // Botón para cerrar el sheet
             Button(action: {
                 viewModel.showResultModal = false // Cerrar el sheet
                 appState.currentView = .mapContainer

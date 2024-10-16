@@ -19,7 +19,7 @@ struct PolicyView: View {
                 VStack(spacing: 20) {
                     Text("Términos y Condiciones")
                         .font(.largeTitle)
-                        .foregroundColor(.mateGold) // Usamos mateGold
+                        .foregroundColor(.mateGold) 
                         .padding()
                     
                     WebView(url: url)

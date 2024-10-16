@@ -76,13 +76,7 @@ class BaseViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    /*
-    // Change the language and fetch translation
-    func changeLanguage(to language: String, for activityId: String) {
-        selectedLanguage = language
-        fetchTranslationForActivity(activityId: activityId, language: language)
-    }
-    */
+
     // Update task IDs and spot IDs in the user's profile
     func updateUserTaskIDs(taskID: String, activityType: String, city: String? = nil, challenge: String) {
         guard var user = user else { return }

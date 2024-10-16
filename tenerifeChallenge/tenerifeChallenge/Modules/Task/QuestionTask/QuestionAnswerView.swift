@@ -15,7 +15,7 @@ struct QuestionAnswerView: View {
     var body: some View {
         ScrollView {
             ZStack {
-                Fondo() // Fondo común
+                Fondo() 
                 
                 VStack(spacing: 10) {
                     
@@ -100,7 +100,7 @@ struct ResultQuestionView: View {
 
     var body: some View {
         ZStack {
-            Fondo() // Fondo común
+            Fondo()
 
             VStack {
                 
@@ -122,7 +122,7 @@ struct ResultQuestionView: View {
                 
                 // Botón para mostrar la traducción en Euskera
                 Button(action: {
-                    viewModel.fetchTranslationForActivity(activityId: viewModel.activityId)  // Cargar la traducción en Euskera
+                    viewModel.fetchTranslationForActivity(activityId: viewModel.activityId)
                     showTranslationSheet = true  // Mostrar el sheet para la traducción
                 }) {
                     Label("Mostrar traducción en Euskera", systemImage: "globe")

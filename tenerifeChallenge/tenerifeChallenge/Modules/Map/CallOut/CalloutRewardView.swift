@@ -10,7 +10,7 @@ import SwiftUI
 struct CalloutRewardView: View {
     var reward: ChallengeReward
     var challenge: String
-    @ObservedObject var viewModel: BaseMapViewModel // Cambio aquí
+    @ObservedObject var viewModel: BaseMapViewModel 
     @EnvironmentObject var appState: AppState
     let soundManager = SoundManager.shared
 

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D300CCAE2CC00F43002E9E88 /* FillGap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300CCAD2CC00F43002E9E88 /* FillGap.swift */; };
+		D300CCB02CC00F58002E9E88 /* FillGap+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300CCAF2CC00F58002E9E88 /* FillGap+Firebase.swift */; };
+		D300CCB32CC00F95002E9E88 /* FillGapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300CCB22CC00F95002E9E88 /* FillGapView.swift */; };
+		D300CCB52CC00FB0002E9E88 /* FillGapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300CCB42CC00FB0002E9E88 /* FillGapViewModel.swift */; };
+		D300CCB72CC00FC5002E9E88 /* FillGapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300CCB62CC00FC5002E9E88 /* FillGapDataManager.swift */; };
+		D300CCB92CC00FE0002E9E88 /* FillGapFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300CCB82CC00FE0002E9E88 /* FillGapFirestoreManager.swift */; };
 		D3386F762CBC3EAC00027178 /* tenerifeChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386F752CBC3EAC00027178 /* tenerifeChallengeApp.swift */; };
 		D3386F782CBC3EAC00027178 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386F772CBC3EAC00027178 /* ContentView.swift */; };
 		D3386F7A2CBC3EAE00027178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3386F792CBC3EAE00027178 /* Assets.xcassets */; };
@@ -145,6 +151,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D300CCAD2CC00F43002E9E88 /* FillGap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillGap.swift; sourceTree = "<group>"; };
+		D300CCAF2CC00F58002E9E88 /* FillGap+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FillGap+Firebase.swift"; sourceTree = "<group>"; };
+		D300CCB22CC00F95002E9E88 /* FillGapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillGapView.swift; sourceTree = "<group>"; };
+		D300CCB42CC00FB0002E9E88 /* FillGapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillGapViewModel.swift; sourceTree = "<group>"; };
+		D300CCB62CC00FC5002E9E88 /* FillGapDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillGapDataManager.swift; sourceTree = "<group>"; };
+		D300CCB82CC00FE0002E9E88 /* FillGapFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillGapFirestoreManager.swift; sourceTree = "<group>"; };
 		D3386F722CBC3EAC00027178 /* tenerifeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tenerifeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3386F752CBC3EAC00027178 /* tenerifeChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tenerifeChallengeApp.swift; sourceTree = "<group>"; };
 		D3386F772CBC3EAC00027178 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -294,6 +306,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D300CCAC2CC00E5E002E9E88 /* fillGap */ = {
+			isa = PBXGroup;
+			children = (
+				D300CCAD2CC00F43002E9E88 /* FillGap.swift */,
+				D300CCAF2CC00F58002E9E88 /* FillGap+Firebase.swift */,
+			);
+			path = fillGap;
+			sourceTree = "<group>";
+		};
+		D300CCB12CC00F85002E9E88 /* fillGap */ = {
+			isa = PBXGroup;
+			children = (
+				D300CCB22CC00F95002E9E88 /* FillGapView.swift */,
+				D300CCB42CC00FB0002E9E88 /* FillGapViewModel.swift */,
+				D300CCB62CC00FC5002E9E88 /* FillGapDataManager.swift */,
+				D300CCB82CC00FE0002E9E88 /* FillGapFirestoreManager.swift */,
+			);
+			path = fillGap;
+			sourceTree = "<group>";
+		};
 		D3386F692CBC3EAC00027178 = {
 			isa = PBXGroup;
 			children = (
@@ -588,6 +620,7 @@
 		D3386FF72CBD1C9C00027178 /* Task */ = {
 			isa = PBXGroup;
 			children = (
+				D300CCB12CC00F85002E9E88 /* fillGap */,
 				D3386FFC2CBD1D5900027178 /* TakePhotosTask */,
 				D3386FFB2CBD1D5400027178 /* Dates */,
 				D3386FFA2CBD1D4D00027178 /* QuestionTask */,
@@ -909,6 +942,7 @@
 		D338708B2CBD2BE300027178 /* Activity */ = {
 			isa = PBXGroup;
 			children = (
+				D300CCAC2CC00E5E002E9E88 /* fillGap */,
 				D33870B22CBD2DD300027178 /* Coin */,
 				D33870B12CBD2DCB00027178 /* Dates */,
 				D33870B02CBD2DC400027178 /* Puzzle */,
@@ -1143,6 +1177,7 @@
 				D3386FB52CBD172700027178 /* KeyboardObserver.swift in Sources */,
 				D33870BF2CBD2EC500027178 /* Puzzle+Firebase.swift in Sources */,
 				D33870BD2CBD2EAF00027178 /* Puzzle.swift in Sources */,
+				D300CCAE2CC00F43002E9E88 /* FillGap.swift in Sources */,
 				D33870422CBD255600027178 /* Map3DView.swift in Sources */,
 				D33870762CBD2AFC00027178 /* AvatarSelectionView.swift in Sources */,
 				D338704D2CBD25EA00027178 /* CalloutRewardView.swift in Sources */,
@@ -1205,11 +1240,13 @@
 				D33870982CBD2C8700027178 /* Challenge.swift in Sources */,
 				D33870C42CBD2F2E00027178 /* DatesEvent.swift in Sources */,
 				D3386FF22CBD1C3C00027178 /* ChallengeRewardDataManager.swift in Sources */,
+				D300CCB92CC00FE0002E9E88 /* FillGapFirestoreManager.swift in Sources */,
 				D33870672CBD274B00027178 /* ForgotPasswordDatamanager.swift in Sources */,
 				D33870442CBD256D00027178 /* Map3DViewModel.swift in Sources */,
 				D3386FEC2CBD1AC200027178 /* ChallengePresentationViewModel.swift in Sources */,
 				D338709C2CBD2CB100027178 /* Spot.swift in Sources */,
 				D33870272CBD231300027178 /* TakePhotoFirestoreManager.swift in Sources */,
+				D300CCB72CC00FC5002E9E88 /* FillGapDataManager.swift in Sources */,
 				D33870592CBD26A900027178 /* MapFirestoreManager.swift in Sources */,
 				D33870922CBD2C3400027178 /* Coordinates.swift in Sources */,
 				D3386FB72CBD173E00027178 /* EventWebView.swift in Sources */,
@@ -1249,15 +1286,18 @@
 				D3386FE62CBD1A6200027178 /* ChallengeListView.swift in Sources */,
 				D3386F822CBC3EAE00027178 /* tenerifeChallenge.xcdatamodeld in Sources */,
 				D33870392CBD23F800027178 /* EditProfileView.swift in Sources */,
+				D300CCB02CC00F58002E9E88 /* FillGap+Firebase.swift in Sources */,
 				D33870502CBD260C00027178 /* ChallengeSelectionView.swift in Sources */,
 				D338702F2CBD237700027178 /* SettingProfiledataManager.swift in Sources */,
 				D338707A2CBD2B2F00027178 /* profileViewModel.swift in Sources */,
 				D33870BB2CBD2E9B00027178 /* QuestionAnswer+Firebase.swift in Sources */,
 				D3386FF62CBD1C8B00027178 /* ChallengeRewardView.swift in Sources */,
 				D33870352CBD23C800027178 /* ContactSheetView.swift in Sources */,
+				D300CCB52CC00FB0002E9E88 /* FillGapViewModel.swift in Sources */,
 				D3386FC82CBD186600027178 /* FirestoreManager.swift in Sources */,
 				D33870062CBD215400027178 /* CoinFirestoreManager.swift in Sources */,
 				D338702D2CBD235F00027178 /* SettingProfileFirestoreManager.swift in Sources */,
+				D300CCB32CC00F95002E9E88 /* FillGapView.swift in Sources */,
 				D33870822CBD2B8D00027178 /* RegistrationViewModel.swift in Sources */,
 				D3386FA12CBD167800027178 /* BaseViewModel.swift in Sources */,
 				D33870CA2CBD2F6800027178 /* Coin+Firebase.swift in Sources */,

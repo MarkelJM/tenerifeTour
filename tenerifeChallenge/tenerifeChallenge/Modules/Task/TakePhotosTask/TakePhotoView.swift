@@ -27,7 +27,7 @@ struct TakePhotoView: View {
                             Image(systemName: "chevron.left")
                                 .font(.headline)
                                 .padding()
-                                .background(Color.mateGold) // Usamos mateGold
+                                .background(Color.mateGold) 
                                 .foregroundColor(.black)
                                 .cornerRadius(10)
                         }
@@ -39,7 +39,7 @@ struct TakePhotoView: View {
                     if viewModel.isLoading {
                         Text("Cargando tarea de foto...")
                             .font(.title2)
-                            .foregroundColor(.mateWhite) // Usamos mateWhite
+                            .foregroundColor(.mateWhite)
                     } else if let errorMessage = viewModel.errorMessage {
                         Text("Error: \(errorMessage)")
                             .foregroundColor(.red)
@@ -47,7 +47,7 @@ struct TakePhotoView: View {
                         VStack(spacing: 20) {
                             Text(takePhoto.question)
                                 .font(.title2)
-                                .foregroundColor(.mateGold) // Usamos mateGold
+                                .foregroundColor(.mateGold)
                                 .multilineTextAlignment(.center)
                                 .padding(.horizontal)
 
@@ -56,7 +56,7 @@ struct TakePhotoView: View {
                             }) {
                                 Text("Tomar Foto")
                                     .padding()
-                                    .background(Color.mateBlueMedium) // Usamos mateBlueMedium
+                                    .background(Color.mateBlueMedium) 
                                     .foregroundColor(.mateWhite)
                                     .cornerRadius(10)
                             }
@@ -133,7 +133,6 @@ struct ResultTakePhotoView: View {
                     }
                 }
 
-                // Botón para mostrar la traducción en Euskera
                 Button(action: {
                     viewModel.fetchTranslationForActivity(activityId: viewModel.activityId) // Cargar la traducción
                     showTranslationSheet = true // Mostrar el sheet para traducción

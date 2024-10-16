@@ -35,7 +35,7 @@ class TranslationDataManager {
         Future { promise in
             print("Buscando traducción para la actividad ID: \(activityId) en Euskera")  // Agregamos el print del activityId
 
-            let docRef = self.db.collection("translate").document("Euskera").collection("activities").document(activityId)
+            let docRef = self.db.collection("translate").document("Ingles").collection("activities").document(activityId)
 
             docRef.getDocument { document, error in
                 if let error = error {

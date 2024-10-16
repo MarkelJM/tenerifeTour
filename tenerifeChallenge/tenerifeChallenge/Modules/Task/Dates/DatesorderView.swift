@@ -36,7 +36,7 @@ struct DatesOrderView: View {
                         }) {
                             Text("Comprobar")
                                 .padding()
-                                .background(Color.mateBlueMedium) // Usamos mateBlueMedium en lugar de mateRed
+                                .background(Color.mateBlueMedium) 
                                 .foregroundColor(.mateWhite)
                                 .cornerRadius(10)
                         }
@@ -137,7 +137,7 @@ struct ResultDatesOrderView: View {
 
     var body: some View {
         ZStack {
-            Fondo() // Fondo común
+            Fondo() 
 
             VStack {
                 // Mostrar el mensaje de alerta
@@ -156,9 +156,8 @@ struct ResultDatesOrderView: View {
                     }
                 }
 
-                // Botón para mostrar la traducción en Euskera
                 Button(action: {
-                    viewModel.fetchTranslationForActivity(activityId: viewModel.activityId)  // Cargar la traducción directamente en Euskera
+                    viewModel.fetchTranslationForActivity(activityId: viewModel.activityId)
                     showTranslationSheet = true  // Mostrar el sheet de traducción
                 }) {
                     Label("Mostrar traducción en Euskera", systemImage: "globe")

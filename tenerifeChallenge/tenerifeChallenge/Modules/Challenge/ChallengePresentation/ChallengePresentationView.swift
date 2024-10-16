@@ -16,7 +16,7 @@ struct ChallengePresentationView: View {
 
     var body: some View {
         ZStack {
-            Fondo() // Usamos el fondo común
+            Fondo()
 
             VStack(spacing: 20) {
                 Spacer()
@@ -29,7 +29,7 @@ struct ChallengePresentationView: View {
                        }
                        .font(.headline)
                        .padding()
-                       .background(Color.mateGold) // Usamos mateGold
+                       .background(Color.mateGold)
                        .foregroundColor(.black)
                        .cornerRadius(10)
                    }
@@ -76,8 +76,8 @@ struct ChallengePresentationView: View {
                             .font(.headline)
                             .padding()
                             .frame(maxWidth: .infinity)
-                            .background(Color.mateBlueMedium) // Usamos mateBlueMedium en lugar de mateRed
-                            .foregroundColor(.mateWhite) // Usamos mateWhite
+                            .background(Color.mateBlueMedium)
+                            .foregroundColor(.mateWhite) 
                             .cornerRadius(10)
                             .padding(.horizontal, 20)
                     }

@@ -25,7 +25,7 @@ struct ChallengeSelectionView: View {
                     
                     Spacer()
                 }
-                .background(Color.mateBlueMedium) // Usamos mateBlueMedium
+                .background(Color.mateBlueMedium) 
                 .cornerRadius(10)
                 .padding(.vertical, 5)
                 .onTapGesture {

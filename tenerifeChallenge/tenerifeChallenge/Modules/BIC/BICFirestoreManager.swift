@@ -14,7 +14,7 @@ class BICFirestoreManager {
     
     func fetchBICs() -> AnyPublisher<[BIC], Error> {
         Future { promise in
-            self.db.collection("agenda").getDocuments { snapshot, error in
+            self.db.collection("bic").getDocuments { snapshot, error in
                 if let error = error {
                     promise(.failure(error))
                 } else if let documents = snapshot?.documents {

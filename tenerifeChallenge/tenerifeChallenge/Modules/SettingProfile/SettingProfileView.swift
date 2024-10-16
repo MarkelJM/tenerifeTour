@@ -28,7 +28,7 @@ struct SettingProfileView: View {
                         }) {
                             Text("Cerrar Sesión")
                                 .padding()
-                                .background(Color.mateBlueMedium) // Usamos mateBlueMedium en lugar de rojo
+                                .background(Color.mateBlueMedium) 
                                 .foregroundColor(.mateWhite)
                                 .cornerRadius(10)
                         }
@@ -42,7 +42,7 @@ struct SettingProfileView: View {
                         .scaledToFit()
                         .frame(width: 120, height: 120)
                         .clipShape(Circle())
-                        .overlay(Circle().stroke(Color.mateGold, lineWidth: 2)) // Usamos mateGold
+                        .overlay(Circle().stroke(Color.mateGold, lineWidth: 2))
                         .padding(.top, 40)
 
                     VStack(alignment: .leading, spacing: 10) {
@@ -100,7 +100,7 @@ struct SettingProfileView: View {
                         }
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color.mateBlueMedium) // Usamos mateBlueMedium
+                        .background(Color.mateBlueMedium)
                         .cornerRadius(10)
                         .padding(.bottom, 30)
                     }
@@ -119,7 +119,7 @@ struct SettingProfileView: View {
                         }
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color.mateBlueDark) // Usamos mateBlueDark
+                        .background(Color.mateBlueDark)
                         .cornerRadius(10)
                     }
                     .padding(.horizontal)
@@ -139,7 +139,7 @@ struct SettingProfileView: View {
                         }
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color.red) // Dejar el rojo para eliminar cuenta
+                        .background(Color.red)
                         .cornerRadius(10)
                         .padding(.top, 20)
                     }
@@ -169,7 +169,7 @@ struct SettingProfileView: View {
             }) {
                 Image(systemName: "pencil.circle")
                     .font(.largeTitle)
-                    .foregroundColor(.mateGold) // Usamos mateGold
+                    .foregroundColor(.mateGold)
                     .padding(.trailing, 20)
                     .padding(.top, 100)
             }
@@ -208,7 +208,7 @@ struct ProfileInfoRow: View {
         HStack {
             Text(label)
                 .font(.headline)
-                .foregroundColor(.mateGold) // Usamos mateGold en lugar de mateRed
+                .foregroundColor(.mateGold)
             Spacer()
             Text(value)
                 .foregroundColor(.mateWhite)
@@ -225,11 +225,11 @@ struct ChallengeStatView: View {
         VStack {
             Text(challenge)
                 .font(.headline)
-                .foregroundColor(.mateBlueLight) // Usamos mateBlueMedium
+                .foregroundColor(.mateBlueLight)
             Text("\(count) tareas completadas")
                 .font(.title)
                 .fontWeight(.bold)
-                .foregroundColor(.mateWhite) // Usamos mateBlueDark en lugar de mateRed
+                .foregroundColor(.mateWhite)
         }
     }
 }

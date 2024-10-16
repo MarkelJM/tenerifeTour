@@ -14,7 +14,7 @@ struct ChallengeListView: View {
 
     var body: some View {
         ZStack {
-            Fondo() // Usamos el fondo común en lugar de una imagen
+            Fondo() 
 
             VStack(spacing: 20) {
                 Text("Retos")

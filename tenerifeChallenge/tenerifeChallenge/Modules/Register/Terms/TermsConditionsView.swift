@@ -27,7 +27,7 @@ struct TermsAndConditionsView: View {
                             Image(systemName: "chevron.left")
                                 .font(.headline)
                                 .padding()
-                                .background(Color.mateGold) // Usamos mateGold
+                                .background(Color.mateGold) 
                                 .foregroundColor(.black)
                                 .cornerRadius(10)
                         }
@@ -39,7 +39,7 @@ struct TermsAndConditionsView: View {
                     
                     Text("Términos y Condiciones")
                         .font(.largeTitle)
-                        .foregroundColor(.mateGold) // Usamos mateGold
+                        .foregroundColor(.mateGold)
                         .padding()
                     
                     // Aquí va la WebView que carga el enlace
@@ -56,13 +56,13 @@ struct TermsAndConditionsView: View {
                     }) {
                         Text("Aceptar")
                             .padding()
-                            .background(Color.mateBlueMedium) // Usamos mateBlueMedium en lugar de mateRed
-                            .foregroundColor(.mateWhite) // Usamos mateWhite
+                            .background(Color.mateBlueMedium)
+                            .foregroundColor(.mateWhite)
                             .cornerRadius(10)
                     }
                     .padding(.bottom, 50)
                 }
-                .background(Color.black.opacity(0.5)) // Fondo con opacidad
+                .background(Color.black.opacity(0.5))
                 .cornerRadius(20)
                 .padding()
             }

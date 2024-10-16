@@ -134,7 +134,7 @@ struct DistanceFilterView: View {
                 Text("Aplicar filtro")
                     .padding()
                     .frame(maxWidth: .infinity)
-                    .background(Color.mateGold) // Usamos mateGold para coherencia
+                    .background(Color.mateGold) 
                     .foregroundColor(.white)
                     .cornerRadius(10)
                     .padding()

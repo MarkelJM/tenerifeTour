@@ -26,7 +26,7 @@ struct ForgotPasswordView: View {
                         Image(systemName: "chevron.left")
                             .font(.headline)
                             .padding()
-                            .background(Color.mateGold) // Usamos el color mateGold
+                            .background(Color.mateGold) 
                             .foregroundColor(.black)
                             .cornerRadius(10)
                     }
@@ -37,13 +37,13 @@ struct ForgotPasswordView: View {
                 
                 Text("Restablecer Contraseña")
                     .font(.largeTitle)
-                    .foregroundColor(.mateGold) // Usamos el color mateGold
+                    .foregroundColor(.mateGold)
                     .padding(.top, 40)
 
                 TextField("Introduce tu Email", text: $email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
-                    .background(Color.mateWhite.opacity(0.8)) // Usamos el color mateWhite
+                    .background(Color.mateWhite.opacity(0.8))
                     .cornerRadius(10)
 
                 // Botón para enviar enlace de restablecimiento usando los colores de la extensión
@@ -51,10 +51,10 @@ struct ForgotPasswordView: View {
                     viewModel.resetPassword(email: email)
                 }) {
                     Text("Enviar Enlace de Restablecimiento")
-                        .foregroundColor(.mateWhite) // Texto blanco
+                        .foregroundColor(.mateWhite)
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color.mateWhite) // Fondo rojo mate
+                        .background(Color.mateWhite)
                         .cornerRadius(10)
                 }
                 .padding(.horizontal)

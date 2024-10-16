@@ -12,7 +12,7 @@ struct MapCallOutView: View {
     var reward: ChallengeReward?
     var challenge: String?
     @EnvironmentObject var appState: AppState
-    @ObservedObject var viewModel: BaseMapViewModel // Cambio aquí
+    @ObservedObject var viewModel: BaseMapViewModel 
     @State private var showCompletedAlert = false
     let soundManager = SoundManager.shared
 
@@ -117,6 +117,8 @@ struct MapCallOutView: View {
             appState.currentView = .coin(id: spot.activityID)
         case "dates":
             appState.currentView = .dates(id: spot.activityID)
+        case "fillGap":
+            appState.currentView = .fillGap(id: spot.activityID)
 
         case "questionAnswers":
             appState.currentView = .questionAnswer(id: spot.activityID)

@@ -117,7 +117,7 @@ class BaseMapViewModel: BaseViewModel {
                 }
             } receiveValue: { [weak self] spots in
                 self?.spots = spots
-                print("Spots loaded: \(spots)")  // <-- Añade esto para ver si los spots se están cargando
+                print("Spots loaded: \(spots)")  
 
                 self?.addSpotsToMap(spots: spots)
                 self?.checkForChallengeCompletionAndAddReward()

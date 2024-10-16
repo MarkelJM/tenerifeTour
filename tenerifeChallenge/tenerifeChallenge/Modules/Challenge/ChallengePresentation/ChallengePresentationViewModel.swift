@@ -31,7 +31,6 @@ class ChallengePresentationViewModel: BaseViewModel {
                 .eraseToAnyPublisher()
         }
 
-        // Asegúrate de que el desafío esté en el perfil del usuario si no está ya
         if user.challenges[challengeName] == nil {
             user.challenges[challengeName] = [] // Inicializa con un array vacío
         }

@@ -12,14 +12,13 @@ struct VerificationEmailView: View {
 
     var body: some View {
         ZStack {
-            // Fondo con imagen o gradiente
             Fondo()
 
             VStack(spacing: 20) {
                 Text("¿Has verificado tu correo electrónico?")
                     .font(.title)
                     .fontWeight(.bold)
-                    .foregroundColor(.mateGold) // Usamos mateGold
+                    .foregroundColor(.mateGold)
                     .padding(.top, 50)
 
                 // Botón para verificar correo
@@ -27,10 +26,10 @@ struct VerificationEmailView: View {
                     viewModel.checkEmailVerification()
                 }) {
                     Text("OK")
-                        .foregroundColor(.mateWhite) // Texto blanco
+                        .foregroundColor(.mateWhite)
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color.mateGold) // Fondo oro mate
+                        .background(Color.mateGold)
                         .cornerRadius(10)
                 }
                 .padding(.bottom, 50)

@@ -1,42 +1,36 @@
 //
-//  CoinViewModel.swift
+//  FillGapViewModel.swift
 //  tenerifeChallenge
 //
-//  Created by Markel Juaristi on 14/10/24.
+//  Created by Markel Juaristi on 16/10/24.
 //
 
 
 import SwiftUI
 import Combine
 
-class CoinViewModel: BaseViewModel {
-    @Published var coins: [Coin] = []
+class FillGapViewModel: BaseViewModel {
+    @Published var fillGap: FillGap?
     @Published var isLoading: Bool = true
-    @Published var showResultModal: Bool = false
-    @Published var resultMessage: String = ""
-
-
-
-    private let dataManager = CoinDataManager()
+    @Published var userAnswers: [String] = []
+    @Published var showResultAlert: Bool = false
+    
+    private let dataManager = FillGapDataManager()
     var activityId: String
-    private var appState: AppState
+    private weak var appState: AppState? // Referencia débil a AppState
 
     init(activityId: String, appState: AppState) {
         self.activityId = activityId
         self.appState = appState
         super.init()
         fetchUserProfile()
-        fetchCoinById(activityId)
+        fetchFillGap()
         fetchAvailableLanguages()
     }
     
-
-    
-
-    
-    func fetchCoinById(_ id: String) {
+    func fetchFillGap() {
         isLoading = true
-        dataManager.fetchCoinById(id)
+        dataManager.fetchFillGapById(activityId)
             .receive(on: DispatchQueue.main)
             .sink { completion in
                 switch completion {
@@ -46,29 +40,40 @@ class CoinViewModel: BaseViewModel {
                 case .finished:
                     break
                 }
-            } receiveValue: { coin in
-                
-                
-                self.coins = [coin]
+            } receiveValue: { fillGap in
+                self.fillGap = fillGap
+                self.userAnswers = Array(repeating: "", count: fillGap.correctPositions.count)
                 self.isLoading = false
-                 
             }
             .store(in: &cancellables)
     }
     
-    func completeTask(coin: Coin) {
+    func submitAnswers() {
+        guard let fillGap = fillGap else { return }
+        
+        // Normalizar respuestas a minúsculas y eliminar espacios en blanco al inicio y al final
+        let normalizedUserAnswers = userAnswers.map { $0.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() }
+        let normalizedCorrectAnswers = fillGap.correctPositions.map { $0.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() }
+        
+        if normalizedUserAnswers == normalizedCorrectAnswers {
+            alertMessage = fillGap.correctAnswerMessage
+            updateUserTask(fillGap: fillGap)
+            updateSpotForUser()
+        } else {
+            alertMessage = fillGap.incorrectAnswerMessage
+        }
+        
+        showResultAlert = true
+    }
+    
+    private func updateUserTask(fillGap: FillGap) {
         guard let user = user else { return }
         
-        if user.challenges[coin.challenge]?.contains(coin.id) == true {
+        if user.challenges[fillGap.challenge]?.contains(fillGap.id) == true {
             print("Task ID already exists, not adding again.")
             return
         }
-
-        updateTaskForUser(taskID: coin.id, challenge: coin.challenge)
-        updateSpotForUser()
-
-        self.resultMessage = coin.correctAnswerMessage
-        self.showResultModal = true
+        updateTaskForUser(taskID: fillGap.id, challenge: fillGap.challenge)
     }
 
     private func updateTaskForUser(taskID: String, challenge: String) {
@@ -83,6 +88,7 @@ class CoinViewModel: BaseViewModel {
                 }
             } receiveValue: { [weak self] _ in
                 print("User task updated in Firestore")
+                //self?.appState?.currentView = .mapContainer
             }
             .store(in: &cancellables)
     }
