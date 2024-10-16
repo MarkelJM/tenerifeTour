@@ -318,7 +318,6 @@
 				D3386F9B2CBD159100027178 /* Modules */,
 				D3386F882CBC3F3200027178 /* SupportingFiles */,
 				D3386F772CBC3EAC00027178 /* ContentView.swift */,
-				D3386F792CBC3EAE00027178 /* Assets.xcassets */,
 				D3386F7E2CBC3EAE00027178 /* Persistence.swift */,
 				D3386F802CBC3EAE00027178 /* tenerifeChallenge.xcdatamodeld */,
 				D3386F7B2CBC3EAE00027178 /* Preview Content */,
@@ -337,6 +336,7 @@
 		D3386F882CBC3F3200027178 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D3386F792CBC3EAE00027178 /* Assets.xcassets */,
 				D3386F892CBC3F4E00027178 /* GoogleService-Info.plist */,
 			);
 			path = SupportingFiles;
