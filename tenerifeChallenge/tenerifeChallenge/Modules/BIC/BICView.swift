@@ -80,7 +80,7 @@ struct BICView: View {
                 }
                 .sheet(item: $selectedBIC) { bic in
                     if let url = URL(string: bic.boletin1URL) {
-                        EventWebView(url: url)
+                        BICWebView(url: url)
                     } else {
                         Text("No se puede cargar la página web")
                     }
@@ -134,7 +134,7 @@ struct DistanceFilterView: View {
                 Text("Aplicar filtro")
                     .padding()
                     .frame(maxWidth: .infinity)
-                    .background(Color.mateGold) 
+                    .background(Color.mateGold)
                     .foregroundColor(.white)
                     .cornerRadius(10)
                     .padding()

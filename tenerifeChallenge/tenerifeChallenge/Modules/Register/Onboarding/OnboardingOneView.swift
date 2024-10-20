@@ -38,9 +38,8 @@ struct OnboardingOneView: View {
                                 .padding(.top, 40)
                             
                             Text("""
-                                ¡Hola! Nuestra nave a tenido unos problemas y hemos aterrizado aquí. Según nuestras coordenadas deberíamos de estar en Euskadi. Parece un lugar hermoso, ¿nos ayudas a conocerlo?
-                                
-                                ¡Vamos a la Conquista de EuskadiGO!
+                                Hola, soy Gallotia, una especie en peligro de extinción. Mi familia es originaria de esta isla, pero hace mucho que no les veo. ¿Me ayudarías a reencontrarme con mi familia?
+
                                 """)
                                 .font(.body)
                                 .foregroundColor(.mateWhite)

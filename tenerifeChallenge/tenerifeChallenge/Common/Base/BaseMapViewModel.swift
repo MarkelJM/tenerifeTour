@@ -20,7 +20,7 @@ class BaseMapViewModel: BaseViewModel {
     @Published var challenges: [Challenge] = []
     @Published var mapAnnotations: [UnifiedAnnotation] = []
     @Published var userLocationAnnotation: UnifiedAnnotation?
-    @Published var centerCoordinate: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 41.6528, longitude: -2.7286)
+    @Published var centerCoordinate: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 28.5, longitude: -16.4)
     @Published var zoomLevel: Double = 0.02
     
     var appState: AppState
@@ -30,9 +30,9 @@ class BaseMapViewModel: BaseViewModel {
 
     init(appState: AppState) {
         self.appState = appState
-        self.selectedChallenge = "retoBasico"
+        self.selectedChallenge = "retoTeide"
         super.init()
-        self.selectedChallenge = userDefaultsManager.getChallengeName() ?? "retoBasico"
+        self.selectedChallenge = userDefaultsManager.getChallengeName() ?? "retoTeide"
         setupBindings()
         fetchUserProfileAndUpdateState()
         fetchChallenges()
@@ -64,7 +64,7 @@ class BaseMapViewModel: BaseViewModel {
                     self.hasCenteredOnUser = true
                 }
 
-                let avatarImage = self.user?.avatar.rawValue ?? "defaultAvatar"
+                let avatarImage = self.user?.avatar.rawValue ?? "lizard2"
                 self.userLocationAnnotation = UnifiedAnnotation(userLocation: location.coordinate, avatarImage: avatarImage)
 
                 // Print para verificar la ubicación actualizada
@@ -101,6 +101,7 @@ class BaseMapViewModel: BaseViewModel {
             }
             .store(in: &cancellables)
     }
+    /*
 
     // Cargar los spots disponibles para el desafío seleccionado
     func fetchSpots() {
@@ -119,6 +120,28 @@ class BaseMapViewModel: BaseViewModel {
                 self?.spots = spots
                 print("Spots loaded: \(spots)")  
 
+                self?.addSpotsToMap(spots: spots)
+                self?.checkForChallengeCompletionAndAddReward()
+            }
+            .store(in: &cancellables)
+    }
+     */
+    func fetchSpots() {
+        print("Llamando a fetchSpots para el desafío: \(selectedChallenge)")
+        
+        dataManager.fetchSpots(for: selectedChallenge)
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] completion in
+                switch completion {
+                case .failure(let error):
+                    print("Error fetching spots: \(error.localizedDescription)")
+                    self?.errorMessage = error.localizedDescription
+                case .finished:
+                    break
+                }
+            } receiveValue: { [weak self] spots in
+                print("Spots recibidos: \(spots)")  // <-- Verifica si los spots se están cargando
+                self?.spots = spots
                 self?.addSpotsToMap(spots: spots)
                 self?.checkForChallengeCompletionAndAddReward()
             }

@@ -13,6 +13,15 @@
 		D300CCB52CC00FB0002E9E88 /* FillGapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300CCB42CC00FB0002E9E88 /* FillGapViewModel.swift */; };
 		D300CCB72CC00FC5002E9E88 /* FillGapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300CCB62CC00FC5002E9E88 /* FillGapDataManager.swift */; };
 		D300CCB92CC00FE0002E9E88 /* FillGapFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300CCB82CC00FE0002E9E88 /* FillGapFirestoreManager.swift */; };
+		D300CCBB2CC3C4A4002E9E88 /* BICwebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300CCBA2CC3C4A4002E9E88 /* BICwebView.swift */; };
+		D300CCD12CC3CE83002E9E88 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D300CCD02CC3CE83002E9E88 /* FirebaseAnalytics */; };
+		D300CCD32CC3CE83002E9E88 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D300CCD22CC3CE83002E9E88 /* FirebaseAuth */; };
+		D300CCD52CC3CE83002E9E88 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = D300CCD42CC3CE83002E9E88 /* FirebaseCrashlytics */; };
+		D300CCD72CC3CE83002E9E88 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D300CCD62CC3CE83002E9E88 /* FirebaseFirestore */; };
+		D300CCD92CC3CE83002E9E88 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D300CCD82CC3CE83002E9E88 /* FirebaseStorage */; };
+		D300CCDC2CC3CE88002E9E88 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = D300CCDB2CC3CE88002E9E88 /* ZIPFoundation */; };
+		D300CCDF2CC3CE90002E9E88 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D300CCDE2CC3CE90002E9E88 /* KeychainSwift */; };
+		D300CCE22CC3CEB8002E9E88 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = D300CCE12CC3CEB8002E9E88 /* FirebaseFunctions */; };
 		D3386F762CBC3EAC00027178 /* tenerifeChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386F752CBC3EAC00027178 /* tenerifeChallengeApp.swift */; };
 		D3386F782CBC3EAC00027178 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386F772CBC3EAC00027178 /* ContentView.swift */; };
 		D3386F7A2CBC3EAE00027178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3386F792CBC3EAE00027178 /* Assets.xcassets */; };
@@ -20,22 +29,12 @@
 		D3386F7F2CBC3EAE00027178 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386F7E2CBC3EAE00027178 /* Persistence.swift */; };
 		D3386F822CBC3EAE00027178 /* tenerifeChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3386F802CBC3EAE00027178 /* tenerifeChallenge.xcdatamodeld */; };
 		D3386F8A2CBC3F4E00027178 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3386F892CBC3F4E00027178 /* GoogleService-Info.plist */; };
-		D3386F8D2CBC3F8800027178 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D3386F8C2CBC3F8800027178 /* FirebaseAnalytics */; };
-		D3386F8F2CBC3F8800027178 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D3386F8E2CBC3F8800027178 /* FirebaseAuth */; };
-		D3386F912CBC3F8800027178 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = D3386F902CBC3F8800027178 /* FirebaseCrashlytics */; };
-		D3386F932CBC3F8800027178 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D3386F922CBC3F8800027178 /* FirebaseFirestore */; };
-		D3386F952CBC3F8800027178 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = D3386F942CBC3F8800027178 /* FirebaseFunctions */; };
-		D3386F972CBC3F8800027178 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = D3386F962CBC3F8800027178 /* FirebaseMessaging */; };
-		D3386F992CBC3F8800027178 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D3386F982CBC3F8800027178 /* FirebaseStorage */; };
 		D3386F9F2CBD165C00027178 /* BaseMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386F9E2CBD165C00027178 /* BaseMapViewModel.swift */; };
 		D3386FA12CBD167800027178 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FA02CBD167800027178 /* BaseViewModel.swift */; };
 		D3386FA42CBD169800027178 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FA32CBD169800027178 /* Background.swift */; };
 		D3386FA62CBD16A800027178 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FA52CBD16A800027178 /* Color.swift */; };
 		D3386FA92CBD16CF00027178 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FA82CBD16CF00027178 /* ARViewContainer.swift */; };
-		D3386FAC2CBD16E800027178 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = D3386FAB2CBD16E800027178 /* ZIPFoundation */; };
-		D3386FAF2CBD16F000027178 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D3386FAE2CBD16F000027178 /* KeychainSwift */; };
 		D3386FB52CBD172700027178 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FB42CBD172700027178 /* KeyboardObserver.swift */; };
-		D3386FB72CBD173E00027178 /* EventWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FB62CBD173E00027178 /* EventWebView.swift */; };
 		D3386FB92CBD175600027178 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FB82CBD175600027178 /* WebView.swift */; };
 		D3386FBB2CBD177A00027178 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FBA2CBD177A00027178 /* SoundManager.swift */; };
 		D3386FC02CBD17E500027178 /* UserDefaultmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3386FBF2CBD17E500027178 /* UserDefaultmanager.swift */; };
@@ -157,6 +156,7 @@
 		D300CCB42CC00FB0002E9E88 /* FillGapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillGapViewModel.swift; sourceTree = "<group>"; };
 		D300CCB62CC00FC5002E9E88 /* FillGapDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillGapDataManager.swift; sourceTree = "<group>"; };
 		D300CCB82CC00FE0002E9E88 /* FillGapFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillGapFirestoreManager.swift; sourceTree = "<group>"; };
+		D300CCBA2CC3C4A4002E9E88 /* BICwebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BICwebView.swift; sourceTree = "<group>"; };
 		D3386F722CBC3EAC00027178 /* tenerifeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tenerifeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3386F752CBC3EAC00027178 /* tenerifeChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tenerifeChallengeApp.swift; sourceTree = "<group>"; };
 		D3386F772CBC3EAC00027178 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -171,7 +171,6 @@
 		D3386FA52CBD16A800027178 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		D3386FA82CBD16CF00027178 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		D3386FB42CBD172700027178 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
-		D3386FB62CBD173E00027178 /* EventWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWebView.swift; sourceTree = "<group>"; };
 		D3386FB82CBD175600027178 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		D3386FBA2CBD177A00027178 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		D3386FBF2CBD17E500027178 /* UserDefaultmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultmanager.swift; sourceTree = "<group>"; };
@@ -284,6 +283,7 @@
 		D33870D02CBD304100027178 /* BICViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BICViewModel.swift; sourceTree = "<group>"; };
 		D33870D22CBD305600027178 /* BICView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BICView.swift; sourceTree = "<group>"; };
 		D33870D52CBD307400027178 /* BICRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BICRow.swift; sourceTree = "<group>"; };
+		D355ECB42CC40454001907EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,15 +291,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3386FAF2CBD16F000027178 /* KeychainSwift in Frameworks */,
-				D3386F972CBC3F8800027178 /* FirebaseMessaging in Frameworks */,
-				D3386F912CBC3F8800027178 /* FirebaseCrashlytics in Frameworks */,
-				D3386F932CBC3F8800027178 /* FirebaseFirestore in Frameworks */,
-				D3386F952CBC3F8800027178 /* FirebaseFunctions in Frameworks */,
-				D3386F992CBC3F8800027178 /* FirebaseStorage in Frameworks */,
-				D3386F8D2CBC3F8800027178 /* FirebaseAnalytics in Frameworks */,
-				D3386F8F2CBC3F8800027178 /* FirebaseAuth in Frameworks */,
-				D3386FAC2CBD16E800027178 /* ZIPFoundation in Frameworks */,
+				D300CCD52CC3CE83002E9E88 /* FirebaseCrashlytics in Frameworks */,
+				D300CCD72CC3CE83002E9E88 /* FirebaseFirestore in Frameworks */,
+				D300CCD12CC3CE83002E9E88 /* FirebaseAnalytics in Frameworks */,
+				D300CCE22CC3CEB8002E9E88 /* FirebaseFunctions in Frameworks */,
+				D300CCDF2CC3CE90002E9E88 /* KeychainSwift in Frameworks */,
+				D300CCD92CC3CE83002E9E88 /* FirebaseStorage in Frameworks */,
+				D300CCD32CC3CE83002E9E88 /* FirebaseAuth in Frameworks */,
+				D300CCDC2CC3CE88002E9E88 /* ZIPFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,11 +325,19 @@
 			path = fillGap;
 			sourceTree = "<group>";
 		};
+		D300CCE02CC3CEB8002E9E88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D3386F692CBC3EAC00027178 = {
 			isa = PBXGroup;
 			children = (
 				D3386F742CBC3EAC00027178 /* tenerifeChallenge */,
 				D3386F732CBC3EAC00027178 /* Products */,
+				D300CCE02CC3CEB8002E9E88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -345,6 +352,7 @@
 		D3386F742CBC3EAC00027178 /* tenerifeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				D355ECB42CC40454001907EC /* Info.plist */,
 				D3386FD72CBD198400027178 /* App */,
 				D3386F9C2CBD159700027178 /* Common */,
 				D3386F9B2CBD159100027178 /* Modules */,
@@ -452,8 +460,8 @@
 		D3386FB22CBD170800027178 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
-				D3386FB62CBD173E00027178 /* EventWebView.swift */,
 				D3386FB82CBD175600027178 /* WebView.swift */,
+				D300CCBA2CC3C4A4002E9E88 /* BICwebView.swift */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -735,8 +743,8 @@
 		D338703A2CBD250700027178 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				D33870512CBD261B00027178 /* 2D */,
 				D338704E2CBD25F600027178 /* ChallengeSelectionView */,
+				D33870512CBD261B00027178 /* 2D */,
 				D33870492CBD25C000027178 /* CallOut */,
 				D33870402CBD254500027178 /* 3D */,
 				D338703D2CBD252600027178 /* MapContainer */,
@@ -1079,15 +1087,14 @@
 			);
 			name = tenerifeChallenge;
 			packageProductDependencies = (
-				D3386F8C2CBC3F8800027178 /* FirebaseAnalytics */,
-				D3386F8E2CBC3F8800027178 /* FirebaseAuth */,
-				D3386F902CBC3F8800027178 /* FirebaseCrashlytics */,
-				D3386F922CBC3F8800027178 /* FirebaseFirestore */,
-				D3386F942CBC3F8800027178 /* FirebaseFunctions */,
-				D3386F962CBC3F8800027178 /* FirebaseMessaging */,
-				D3386F982CBC3F8800027178 /* FirebaseStorage */,
-				D3386FAB2CBD16E800027178 /* ZIPFoundation */,
-				D3386FAE2CBD16F000027178 /* KeychainSwift */,
+				D300CCD02CC3CE83002E9E88 /* FirebaseAnalytics */,
+				D300CCD22CC3CE83002E9E88 /* FirebaseAuth */,
+				D300CCD42CC3CE83002E9E88 /* FirebaseCrashlytics */,
+				D300CCD62CC3CE83002E9E88 /* FirebaseFirestore */,
+				D300CCD82CC3CE83002E9E88 /* FirebaseStorage */,
+				D300CCDB2CC3CE88002E9E88 /* ZIPFoundation */,
+				D300CCDE2CC3CE90002E9E88 /* KeychainSwift */,
+				D300CCE12CC3CEB8002E9E88 /* FirebaseFunctions */,
 			);
 			productName = tenerifeChallenge;
 			productReference = D3386F722CBC3EAC00027178 /* tenerifeChallenge.app */;
@@ -1118,9 +1125,9 @@
 			);
 			mainGroup = D3386F692CBC3EAC00027178;
 			packageReferences = (
-				D3386F8B2CBC3F8800027178 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				D3386FAA2CBD16E800027178 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
-				D3386FAD2CBD16F000027178 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				D300CCCF2CC3CE83002E9E88 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D300CCDA2CC3CE88002E9E88 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				D300CCDD2CC3CE8F002E9E88 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			productRefGroup = D3386F732CBC3EAC00027178 /* Products */;
 			projectDirPath = "";
@@ -1236,6 +1243,7 @@
 				D338701C2CBD227300027178 /* DatesorderFirestoreManager.swift in Sources */,
 				D3386FC22CBD17F900027178 /* KeyChainManager.swift in Sources */,
 				D33870312CBD239000027178 /* SettingProfileViewModel.swift in Sources */,
+				D300CCBB2CC3C4A4002E9E88 /* BICwebView.swift in Sources */,
 				D33870332CBD23AF00027178 /* SettingProfileView.swift in Sources */,
 				D33870982CBD2C8700027178 /* Challenge.swift in Sources */,
 				D33870C42CBD2F2E00027178 /* DatesEvent.swift in Sources */,
@@ -1249,7 +1257,6 @@
 				D300CCB72CC00FC5002E9E88 /* FillGapDataManager.swift in Sources */,
 				D33870592CBD26A900027178 /* MapFirestoreManager.swift in Sources */,
 				D33870922CBD2C3400027178 /* Coordinates.swift in Sources */,
-				D3386FB72CBD173E00027178 /* EventWebView.swift in Sources */,
 				D3386FE82CBD1A9300027178 /* ChallengePresentationFirestoreManager.swift in Sources */,
 				D3386FEE2CBD1ADC00027178 /* ChallengePresentationView.swift in Sources */,
 				D3386FEA2CBD1AAA00027178 /* ChallengePresentationDataManager.swift in Sources */,
@@ -1439,11 +1446,20 @@
 				DEVELOPMENT_TEAM = BHC56Q6KCK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tenerifeChallenge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tenerife Challenge";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Necesitamos acceso a la galería para guardar y cargar fotos relacionadas con la aplicación.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Necesitamos acceso a la cámara para tomar fotos como parte de las actividades.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Necesitamos tu ubicación para mostrar puntos de interés cercanos.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Necesitamos tu ubicación para mostrar puntos de interés cercanos.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Necesitamos tu ubicación para mostrar puntos de interés cercanos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Necesitamos acceso a la carpeta de fotografías para guardar y cargar fotos relacionadas con la aplicación.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1451,9 +1467,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenerifeChallenge.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1468,11 +1488,20 @@
 				DEVELOPMENT_TEAM = BHC56Q6KCK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tenerifeChallenge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tenerife Challenge";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Necesitamos acceso a la galería para guardar y cargar fotos relacionadas con la aplicación.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Necesitamos acceso a la cámara para tomar fotos como parte de las actividades.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Necesitamos tu ubicación para mostrar puntos de interés cercanos.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Necesitamos tu ubicación para mostrar puntos de interés cercanos.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Necesitamos tu ubicación para mostrar puntos de interés cercanos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Necesitamos acceso a la carpeta de fotografías para guardar y cargar fotos relacionadas con la aplicación.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1480,9 +1509,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenerifeChallenge.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1510,7 +1543,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D3386F8B2CBC3F8800027178 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		D300CCCF2CC3CE83002E9E88 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -1518,7 +1551,7 @@
 				minimumVersion = 11.3.0;
 			};
 		};
-		D3386FAA2CBD16E800027178 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+		D300CCDA2CC3CE88002E9E88 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
 			requirement = {
@@ -1526,7 +1559,7 @@
 				minimumVersion = 0.9.19;
 			};
 		};
-		D3386FAD2CBD16F000027178 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+		D300CCDD2CC3CE8F002E9E88 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
 			requirement = {
@@ -1537,50 +1570,45 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D3386F8C2CBC3F8800027178 /* FirebaseAnalytics */ = {
+		D300CCD02CC3CE83002E9E88 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D3386F8B2CBC3F8800027178 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = D300CCCF2CC3CE83002E9E88 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
-		D3386F8E2CBC3F8800027178 /* FirebaseAuth */ = {
+		D300CCD22CC3CE83002E9E88 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D3386F8B2CBC3F8800027178 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = D300CCCF2CC3CE83002E9E88 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		D3386F902CBC3F8800027178 /* FirebaseCrashlytics */ = {
+		D300CCD42CC3CE83002E9E88 /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D3386F8B2CBC3F8800027178 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = D300CCCF2CC3CE83002E9E88 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
 		};
-		D3386F922CBC3F8800027178 /* FirebaseFirestore */ = {
+		D300CCD62CC3CE83002E9E88 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D3386F8B2CBC3F8800027178 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = D300CCCF2CC3CE83002E9E88 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
 		};
-		D3386F942CBC3F8800027178 /* FirebaseFunctions */ = {
+		D300CCD82CC3CE83002E9E88 /* FirebaseStorage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D3386F8B2CBC3F8800027178 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFunctions;
-		};
-		D3386F962CBC3F8800027178 /* FirebaseMessaging */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D3386F8B2CBC3F8800027178 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseMessaging;
-		};
-		D3386F982CBC3F8800027178 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D3386F8B2CBC3F8800027178 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = D300CCCF2CC3CE83002E9E88 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
 		};
-		D3386FAB2CBD16E800027178 /* ZIPFoundation */ = {
+		D300CCDB2CC3CE88002E9E88 /* ZIPFoundation */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D3386FAA2CBD16E800027178 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			package = D300CCDA2CC3CE88002E9E88 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
 			productName = ZIPFoundation;
 		};
-		D3386FAE2CBD16F000027178 /* KeychainSwift */ = {
+		D300CCDE2CC3CE90002E9E88 /* KeychainSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D3386FAD2CBD16F000027178 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			package = D300CCDD2CC3CE8F002E9E88 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
+		};
+		D300CCE12CC3CEB8002E9E88 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D300CCCF2CC3CE83002E9E88 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
 		};
 /* End XCSwiftPackageProductDependency section */
 

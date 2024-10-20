@@ -32,7 +32,7 @@ struct Map2DView: View {
                         MapAnnotation(coordinate: annotation.coordinate) {
                             if annotation.isUserLocation {
                                 // Muestra el avatar del usuario en su ubicación
-                                Image(viewModel.user?.avatar.rawValue ?? "defaultAvatar")
+                                Image(viewModel.user?.avatar.rawValue ?? "lizard1")
                                     .resizable()
                                     .frame(width: 40, height: 40)
                                     .clipShape(Circle())

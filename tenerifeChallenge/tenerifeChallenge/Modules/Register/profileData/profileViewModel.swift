@@ -45,8 +45,8 @@ class ProfileViewModel: ObservableObject {
             return
         }
         
-        if challenges["retoBasico"] == nil {
-            challenges["retoBasico"] = []
+        if challenges["retoTeide"] == nil {
+            challenges["retoTeide"] = []
         }
 
         let user = User(
@@ -104,8 +104,8 @@ class ProfileViewModel: ObservableObject {
                 self.specialRewards = user.specialRewards
                 self.challenges = user.challenges
 
-                if self.challenges["retoBasico"] == nil {
-                    self.challenges["retoBasico"] = []
+                if self.challenges["retoTeide"] == nil {
+                    self.challenges["retoTeide"] = []
                 }
             }
             .store(in: &cancellables)

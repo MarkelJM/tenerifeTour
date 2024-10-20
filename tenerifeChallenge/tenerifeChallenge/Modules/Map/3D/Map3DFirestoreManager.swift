@@ -10,7 +10,7 @@ import Combine
 
 class Map3DFirestoreManager {
     private var db = Firestore.firestore()
-    
+    /*
     func fetchSpots(for challengeName: String) -> AnyPublisher<[Spot], Error> {
         Future { promise in
             self.db.collection("spots")
@@ -29,6 +29,33 @@ class Map3DFirestoreManager {
         }
         .eraseToAnyPublisher()
     }
+     */
+    func fetchSpots(for challengeName: String) -> AnyPublisher<[Spot], Error> {
+        Future { promise in
+            print("Fetching spots for challenge: \(challengeName)")
+            self.db.collection("spots")
+                .document(challengeName)
+                .collection("locationsSpot")
+                .getDocuments { querySnapshot, error in
+                    if let error = error {
+                        print("Error fetching spots: \(error.localizedDescription)")
+                        promise(.failure(error))
+                    } else {
+                        querySnapshot?.documents.forEach { document in
+                            print("Document data: \(document.data())")
+                        }
+                        let spots = querySnapshot?.documents.compactMap { document in
+                            Spot(from: document.data())
+                        } ?? []
+                        print("Spots fetched from Firestore: \(spots.count)")
+                        promise(.success(spots))
+                    }
+                }
+        }
+        .eraseToAnyPublisher()
+    }
+    
+    
     
     func fetchChallenges() -> AnyPublisher<[Challenge], Error> {
         Future { promise in

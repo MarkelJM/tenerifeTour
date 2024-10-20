@@ -78,7 +78,7 @@ class LoginViewModel: ObservableObject {
             avatar: .boy,
             spotIDs: [],
             specialRewards: [:],
-            challenges: ["retoBasico": []]
+            challenges: ["retoTeide": []]
         )
 
         dataManager.createUserProfile(user: defaultUser)

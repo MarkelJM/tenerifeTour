@@ -19,11 +19,21 @@ class MapFirestoreManager {
                 .collection("locationsSpot")
                 .getDocuments { querySnapshot, error in
                     if let error = error {
+                        print("Error fetching spots: \(error.localizedDescription)")
                         promise(.failure(error))
                     } else {
-                        let spots = querySnapshot?.documents.compactMap { document in
+                        guard let documents = querySnapshot?.documents else {
+                            print("No documents found in collection spots/\(challengeName)/locationsSpot")
+                            promise(.success([]))
+                            return
+                        }
+                        print("Documentos encontrados: \(documents.count)")
+                        documents.forEach { document in
+                            print("Document data: \(document.data())")
+                        }
+                        let spots = documents.compactMap { document in
                             Spot(from: document.data())
-                        } ?? []
+                        }
                         promise(.success(spots))
                     }
                 }
@@ -33,7 +43,7 @@ class MapFirestoreManager {
     
     func fetchChallenges() -> AnyPublisher<[Challenge], Error> {
         Future { promise in
-            self.db.collection("challengeEuskadi").getDocuments { querySnapshot, error in
+            self.db.collection("challengeTenerife").getDocuments { querySnapshot, error in
                 if let error = error {
                     promise(.failure(error))
                 } else {

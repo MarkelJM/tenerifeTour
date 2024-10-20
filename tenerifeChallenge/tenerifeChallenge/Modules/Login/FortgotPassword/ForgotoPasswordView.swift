@@ -51,7 +51,7 @@ struct ForgotPasswordView: View {
                     viewModel.resetPassword(email: email)
                 }) {
                     Text("Enviar Enlace de Restablecimiento")
-                        .foregroundColor(.mateWhite)
+                        .foregroundColor(.mateGold)
                         .padding()
                         .frame(maxWidth: .infinity)
                         .background(Color.mateWhite)

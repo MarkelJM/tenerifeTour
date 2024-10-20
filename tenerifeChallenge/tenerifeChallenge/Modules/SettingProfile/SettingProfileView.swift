@@ -37,7 +37,7 @@ struct SettingProfileView: View {
                         Spacer()
                     }
 
-                    Image(viewModel.user?.avatar.rawValue ?? "normalMutila")
+                    Image(viewModel.user?.avatar.rawValue ?? "lizard2")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 120, height: 120)

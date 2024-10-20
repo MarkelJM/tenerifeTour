@@ -1,15 +1,14 @@
 //
-//  EventWebView.swift
+//  BICwebView.swift
 //  tenerifeChallenge
 //
-//  Created by Markel Juaristi on 14/10/24.
+//  Created by Markel Juaristi on 19/10/24.
 //
-
 
 import SwiftUI
 import WebKit
 
-struct EventWebView: UIViewRepresentable {
+struct BICWebView: UIViewRepresentable {
     var url: URL
 
     func makeUIView(context: Context) -> WKWebView {
