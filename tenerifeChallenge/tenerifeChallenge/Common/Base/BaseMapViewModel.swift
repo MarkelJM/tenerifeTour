@@ -101,31 +101,7 @@ class BaseMapViewModel: BaseViewModel {
             }
             .store(in: &cancellables)
     }
-    /*
 
-    // Cargar los spots disponibles para el desafío seleccionado
-    func fetchSpots() {
-        dataManager.fetchSpots(for: selectedChallenge)
-            .receive(on: DispatchQueue.main)
-            .sink { [weak self] completion in
-                switch completion {
-                case .failure(let error):
-                    print("Error fetching spots: \(error.localizedDescription)")
-
-                    self?.errorMessage = error.localizedDescription
-                case .finished:
-                    break
-                }
-            } receiveValue: { [weak self] spots in
-                self?.spots = spots
-                print("Spots loaded: \(spots)")  
-
-                self?.addSpotsToMap(spots: spots)
-                self?.checkForChallengeCompletionAndAddReward()
-            }
-            .store(in: &cancellables)
-    }
-     */
     func fetchSpots() {
         print("Llamando a fetchSpots para el desafío: \(selectedChallenge)")
         

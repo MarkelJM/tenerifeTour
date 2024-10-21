@@ -49,7 +49,7 @@ struct CustomTabBar: View {
                 }) {
                     VStack {
                         Image(systemName: "calendar")
-                        Text("Eventos")
+                        Text("BIC")
                     }
                 }
                 .frame(maxWidth: .infinity)

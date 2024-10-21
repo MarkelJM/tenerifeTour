@@ -13,6 +13,8 @@ struct OnboardingOneView: View {
     var body: some View {
         ZStack {
             Fondo()
+            
+
 
             VStack {
                 ScrollView {
@@ -36,6 +38,11 @@ struct OnboardingOneView: View {
                                 .font(.title)
                                 .foregroundColor(.mateGold)
                                 .padding(.top, 40)
+                            
+                            Image("lizard1")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 100, height: 100)
                             
                             Text("""
                                 Hola, soy Gallotia, una especie en peligro de extinción. Mi familia es originaria de esta isla, pero hace mucho que no les veo. ¿Me ayudarías a reencontrarme con mi familia?

@@ -14,10 +14,9 @@ struct ChallengeRewardView: View {
 
     var body: some View {
         ZStack {
-            Image("fondoSolar")
-                .resizable()
-                .scaledToFill()
-                .edgesIgnoringSafeArea(.all)
+            Fondo()
+            
+            
             
             VStack(spacing: 20) {
                 if viewModel.isLoading {
